@@ -96,4 +96,142 @@ print(optionalName)
 print(greeting)
 
 
+//MARK:- SWITCH
 
+let vegetable = "red papper"
+var vegetakb:String ;
+switch vegetable {
+    case "celery":
+         vegetakb = "add some comments"
+    case let x where
+        x.hasSuffix("papper"):
+          vegetakb = "Is it a spicy \(x)?"
+default:
+     vegetakb = "ve"
+}
+print(vegetable)
+print(vegetakb)
+
+//MARK:- FOR IN
+
+let interestingNumbers = ["Prime": [2,3,4535,35], "Fibonacci": [1,2,3,4,5],"Square": [1,4,5,2,75]]
+var largets = 0
+for (king,numbers) in interestingNumbers {
+    for number in numbers {
+        if number > largets {
+            largets = number
+        }
+    }
+}
+print(largets)
+
+
+//MARK:- WHILE
+
+var intege = 0
+while intege < 9 {
+    print(intege)
+    intege++
+}
+
+repeat {
+    intege++
+    print(intege)
+} while intege < 20
+
+
+//MARK:- Funtions and Closures
+
+func greet(name: String, day: String) -> String {
+    return "hello \(name),today is \(day)day"
+}
+print(greet("Bob", day:"Tuesday"))
+
+func calculateStatistics(scores: [Int]) ->(min: Int, max: Int, sum: Int) {
+    var min = scores[0]
+    var max = scores[0]
+    var sum = 0
+    
+    for score in scores {
+        if score > max {
+         max = score
+        } else if score < min {
+            min = score
+        }
+        sum += score
+    }
+    return (min,max,sum)
+}
+
+let statistics = calculateStatistics([5, 3,133, 23, 234])
+print(statistics.sum)
+print(statistics.min)
+
+func sumOf(numbers: Int...) -> Int {
+    var sum = 0
+    for number in numbers {
+        sum += number
+        
+    }
+    return sum
+}
+
+print(sumOf())
+print(sumOf(2, 43, 53))
+
+func returnFifteen() -> Int {
+    var y = 10
+    
+    func add() {
+        y += 5
+    }
+    add()
+    return y
+}
+print(returnFifteen())
+
+//MARK:- Class and Object
+
+class Car {
+    var carName:String
+    init(carName: String) {
+        self.carName = carName
+        print(carName)
+    }
+    func run(times: String)->String {
+        print(times)
+        print(self.carName)
+        return times
+    }
+}
+
+var benCar = Car(carName: "this is benCar")
+benCar.carName = "BenChi"
+benCar.run("23")
+
+class BenCar: Car {
+    var price: Double = 0.0
+    var productSerials: String
+    init(price: Double,productSerial: String,carName: String) {
+        self.price = price
+        self.productSerials = productSerial
+
+        super.init(carName: carName)
+    }
+    override func run(times: String) -> String {
+        super.run(times)
+        print("this is bencar run")
+        return "this is bencar run "
+    }
+}
+
+let test = BenCar(price: 23.9, productSerial: "peiking", carName: "benchi")
+test.run("thllo")
+
+//MARK:- set and get method
+class EquilateralTriangle {
+    var sideLength: Double = 0.0
+    init(sideLength: Double,name: String) {
+        self.sideLength = sideLength
+    }
+}
