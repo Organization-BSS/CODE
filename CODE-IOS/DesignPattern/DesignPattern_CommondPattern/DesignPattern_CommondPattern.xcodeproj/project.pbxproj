@@ -12,7 +12,6 @@
 		0B4C3BFB1C0E3D2E00433CBF /* TV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C3BFA1C0E3D2E00433CBF /* TV.m */; };
 		0B4C3BFE1C0E3DEA00433CBF /* ConcreteCommond_TurnOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C3BFD1C0E3DEA00433CBF /* ConcreteCommond_TurnOn.m */; };
 		0B4C3C011C0E3DFF00433CBF /* ConcreteCommond_TurnOff.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C3C001C0E3DFF00433CBF /* ConcreteCommond_TurnOff.m */; };
-		0B4C3C041C0E3E0F00433CBF /* ConcreteCommond_ChangeChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C3C031C0E3E0F00433CBF /* ConcreteCommond_ChangeChannel.m */; };
 		0B4C3C071C0E40D100433CBF /* Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C3C061C0E40D100433CBF /* Control.m */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +38,6 @@
 		0B4C3BFD1C0E3DEA00433CBF /* ConcreteCommond_TurnOn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteCommond_TurnOn.m; sourceTree = "<group>"; };
 		0B4C3BFF1C0E3DFF00433CBF /* ConcreteCommond_TurnOff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteCommond_TurnOff.h; sourceTree = "<group>"; };
 		0B4C3C001C0E3DFF00433CBF /* ConcreteCommond_TurnOff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteCommond_TurnOff.m; sourceTree = "<group>"; };
-		0B4C3C021C0E3E0F00433CBF /* ConcreteCommond_ChangeChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteCommond_ChangeChannel.h; sourceTree = "<group>"; };
-		0B4C3C031C0E3E0F00433CBF /* ConcreteCommond_ChangeChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteCommond_ChangeChannel.m; sourceTree = "<group>"; };
 		0B4C3C051C0E40D100433CBF /* Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Control.h; sourceTree = "<group>"; };
 		0B4C3C061C0E40D100433CBF /* Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Control.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,8 +89,6 @@
 				0B4C3BFD1C0E3DEA00433CBF /* ConcreteCommond_TurnOn.m */,
 				0B4C3BFF1C0E3DFF00433CBF /* ConcreteCommond_TurnOff.h */,
 				0B4C3C001C0E3DFF00433CBF /* ConcreteCommond_TurnOff.m */,
-				0B4C3C021C0E3E0F00433CBF /* ConcreteCommond_ChangeChannel.h */,
-				0B4C3C031C0E3E0F00433CBF /* ConcreteCommond_ChangeChannel.m */,
 				0B4C3C051C0E40D100433CBF /* Control.h */,
 				0B4C3C061C0E40D100433CBF /* Control.m */,
 			);
@@ -156,7 +151,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B4C3C041C0E3E0F00433CBF /* ConcreteCommond_ChangeChannel.m in Sources */,
 				0B4C3C011C0E3DFF00433CBF /* ConcreteCommond_TurnOff.m in Sources */,
 				0B4C3BFE1C0E3DEA00433CBF /* ConcreteCommond_TurnOn.m in Sources */,
 				0B4C3BEF1C0E3C2A00433CBF /* main.m in Sources */,
@@ -281,6 +275,7 @@
 				0B4C3BF41C0E3C2A00433CBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

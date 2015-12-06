@@ -52,8 +52,6 @@ var shoppings = []
 print("hel\(shoppings)")
 
 
-
-
 var occupations = ["key1": "hello","key2": "hi"]
 occupations["key3"] = "nihao"
 print(occupations)
@@ -85,5 +83,17 @@ print(teamScores)
 
 var optionalString: String? = "hello"
 print(optionalString == nil)
+
+//var optionalName: String? = "John Applessed"
+var optionalName: String? = nil
+
+var greeting = "Hello!";
+if let name = optionalName {
+    greeting = "Hello, \(name)";
+}
+
+print(optionalName)
+print(greeting)
+
 
 
