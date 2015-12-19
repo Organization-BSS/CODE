@@ -153,7 +153,7 @@ public class BookNode {
 
 		Document doc = null;
 		try {
-			doc = Jsoup.connect(urlString).timeout(300000).get();
+			doc = Jsoup.connect(urlString).timeout(34443000).get();
 		} catch (IOException e) {
 			e.printStackTrace();
 			for (int i = 0; i < 100; i++) {
@@ -168,6 +168,7 @@ public class BookNode {
 			}
 
 		}
+		System.out.println(doc.text());
 		@SuppressWarnings("unused")
 		String title = doc.title();// БъЬт
 		bookTitle = title.split(" - ")[0];
@@ -257,13 +258,13 @@ public class BookNode {
 			logString = new String(bookIndex + spitString + bookAddress
 					+ spitString + bookTitle + spitString + author + spitString
 					+ imageAddress + spitString + page + spitString + size
-					+ spitString + year + spitString + downloadAddress+"\n");
-			
+					+ spitString + year + spitString + downloadAddress + "\n");
+
 			System.out.println(bookIndex + spitString + bookAddress
 					+ spitString + bookTitle + spitString + author + spitString
 					+ imageAddress + spitString + page + spitString + size
 					+ spitString + year + spitString + downloadAddress);
-			
+
 			return logString;
 
 		}

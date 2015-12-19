@@ -16,9 +16,14 @@ import java.util.TimerTask;
  * 
  */
 public class Test {
-
+	public static void main(String[] args) {
+		load();
+		// unionFiles();
+	}
+	
+	
 	/**
-	 * @param args
+	 * 加载网页数据
 	 */
 
 	public static void load() {
@@ -43,10 +48,7 @@ public class Test {
 		}
 	}
 
-	public static void main(String[] args) {
-//		load();
-		unionFiles();
-	}
+
 	 public static void timer1() {
 	        Timer timer = new Timer();
 	        timer.schedule(new TimerTask() {
@@ -54,7 +56,7 @@ public class Test {
 	                System.out.println("-------设定要指定任务--------");
 	                load();
 	            }
-	        }, 500);// 设定指定的时间time,此处为2000毫秒 1miao 100haomiao
+	        }, 1000);// 设定指定的时间time,此处为2000毫秒 1miao 100haomiao
 	    }
 
 	 public static void unionFiles() {
