@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self testCoreData];
+//    [self testCoreData];
+    [self writeCodeByMyself];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -98,16 +99,19 @@
     for (NSManagedObject *obj in objs) {
         NSLog(@"name=%@", [obj valueForKey:@"name"]);
     }
-    
-    // 传入需要删除的实体对象
-    [context deleteObject:managedObject];
-    // 将结果同步到数据库
-    NSError *error = nil;
-    [context save:&error];
-    if (error) {
-        [NSException raise:@"删除错误" format:@"%@", [error localizedDescription]];
-    }
+#pragma mark 4.删除数据库中的数据
+//    // 传入需要删除的实体对象
+//    [context deleteObject:managedObject];
+//    // 将结果同步到数据库
+//    NSError *error = nil;
+//    [context save:&error];
+//    if (error) {
+//        [NSException raise:@"删除错误" format:@"%@", [error localizedDescription]];
+//    }
     
 }
-
+- (void)writeCodeByMyself {
+    // 搭建环境
+}
 @end
+
