@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   type = "1"
+   type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Study_CoreData_2016_01_09/ViewController.m"
-            timestampString = "474046085.656136"
+            filePath = "Practice_NetworkTests/Practice_NetworkTests.m"
+            timestampString = "482420817.339823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-tearDown"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Study_CoreData_2016_01_09/ViewController.m"
-            timestampString = "474049563.694228"
+            filePath = "Practice_Network/Test_afnetworking.m"
+            timestampString = "482708175.545185"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "-testMyCoreData"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-downloadFiles"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
