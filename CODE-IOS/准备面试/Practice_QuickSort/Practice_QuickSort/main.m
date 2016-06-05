@@ -70,7 +70,6 @@ void quickSort(int *b,int left,int right) {
     b[i] = key;
     quickSort(b, left, i-1);
     quickSort(b, i+1, right);
-    
     return;
 }
 

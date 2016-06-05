@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface QuickSort : NSObject
-
 // 快速排序
 - (NSMutableArray *)quickSort:(NSMutableArray *)array leftValue:(NSInteger)left rightValue:(NSInteger)right;
 @end
