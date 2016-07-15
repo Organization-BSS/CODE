@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Servlet_uploadImage"
+  id="myeclipse.1468381694796"
+  context-root="/OHJJ"
+  j2ee-spec="5.0"
+  archive="Servlet_uploadImage.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
