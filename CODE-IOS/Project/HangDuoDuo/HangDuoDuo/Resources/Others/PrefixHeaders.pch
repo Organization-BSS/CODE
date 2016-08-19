@@ -1,0 +1,45 @@
+//
+//  PrefixHeaders.pch
+//  Hangduoduo
+//
+//  Created by bss on 16/7/20.
+//  Copyright © 2016年 Beijing Galaxy Hangduoduo Technology Co., Ltd. All rights reserved.
+//
+
+#ifndef PrefixHeaders_pch
+#define PrefixHeaders_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark ---------------------Controllers-----------------------
+
+
+#pragma mark ---------------------Views-----------------------------
+
+
+#pragma mark ---------------------Models----------------------------
+
+
+#pragma mark ---------------------ViewModels------------------------
+
+
+#pragma mark --------------------ClassFactorys----------------------
+
+#import "AppWindowFactory.h"
+
+
+#pragma mark --------------------Macros-----------------------------
+
+
+#pragma mark --------------------Vendors-----------------------------
+
+
+#pragma mark --------------------Tools-------------------------------
+
+
+
+
+
+
+#endif /* PrefixHeaders_pch */

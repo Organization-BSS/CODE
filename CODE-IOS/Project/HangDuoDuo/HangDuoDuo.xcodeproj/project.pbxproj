@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BFE25F41D4B004600C41FFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE25F31D4B004600C41FFB /* main.m */; };
+		0BFE25FD1D4B004600C41FFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE25FB1D4B004600C41FFB /* Main.storyboard */; };
+		0BFE25FF1D4B004600C41FFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE25FE1D4B004600C41FFB /* Assets.xcassets */; };
+		0BFE26021D4B004600C41FFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE26001D4B004600C41FFB /* LaunchScreen.storyboard */; };
+		0BFE260D1D4B004600C41FFB /* HangDuoDuoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE260C1D4B004600C41FFB /* HangDuoDuoTests.m */; };
+		0BFE26181D4B004600C41FFB /* HangDuoDuoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE26171D4B004600C41FFB /* HangDuoDuoUITests.m */; };
+		0BFE26431D4B011800C41FFB /* BaseClassFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE262D1D4B011800C41FFB /* BaseClassFactory.m */; };
+		0BFE26441D4B011800C41FFB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE26311D4B011800C41FFB /* BaseViewController.m */; };
+		0BFE26451D4B011800C41FFB /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE26321D4B011800C41FFB /* BaseViewController.xib */; };
+		0BFE26461D4B011800C41FFB /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE26341D4B011800C41FFB /* DefaultViewController.m */; };
+		0BFE26471D4B011800C41FFB /* DefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE26351D4B011800C41FFB /* DefaultViewController.xib */; };
+		0BFE264C1D4B013900C41FFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE264A1D4B013900C41FFB /* AppDelegate.m */; };
+		0BFE264E1D4B021E00C41FFB /* AppWindowFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE262B1D4B011800C41FFB /* AppWindowFactory.m */; };
+		0BFE264F1D4B022A00C41FFB /* AppWindowFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE262A1D4B011800C41FFB /* AppWindowFactory.h */; };
+		0BFE26501D4B022A00C41FFB /* BaseClassFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE262C1D4B011800C41FFB /* BaseClassFactory.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BFE26091D4B004600C41FFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BFE25E71D4B004600C41FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BFE25EE1D4B004600C41FFB;
+			remoteInfo = HangDuoDuo;
+		};
+		0BFE26141D4B004600C41FFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BFE25E71D4B004600C41FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BFE25EE1D4B004600C41FFB;
+			remoteInfo = HangDuoDuo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BFE25EF1D4B004600C41FFB /* HangDuoDuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangDuoDuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BFE25F31D4B004600C41FFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BFE25FC1D4B004600C41FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0BFE25FE1D4B004600C41FFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BFE26011D4B004600C41FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0BFE26031D4B004600C41FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BFE26081D4B004600C41FFB /* HangDuoDuoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangDuoDuoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BFE260C1D4B004600C41FFB /* HangDuoDuoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HangDuoDuoTests.m; sourceTree = "<group>"; };
+		0BFE260E1D4B004600C41FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BFE26131D4B004600C41FFB /* HangDuoDuoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangDuoDuoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BFE26171D4B004600C41FFB /* HangDuoDuoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HangDuoDuoUITests.m; sourceTree = "<group>"; };
+		0BFE26191D4B004600C41FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BFE262A1D4B011800C41FFB /* AppWindowFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppWindowFactory.h; sourceTree = "<group>"; };
+		0BFE262B1D4B011800C41FFB /* AppWindowFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppWindowFactory.m; sourceTree = "<group>"; };
+		0BFE262C1D4B011800C41FFB /* BaseClassFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClassFactory.h; sourceTree = "<group>"; };
+		0BFE262D1D4B011800C41FFB /* BaseClassFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClassFactory.m; sourceTree = "<group>"; };
+		0BFE26301D4B011800C41FFB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		0BFE26311D4B011800C41FFB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		0BFE26321D4B011800C41FFB /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		0BFE26331D4B011800C41FFB /* DefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultViewController.h; sourceTree = "<group>"; };
+		0BFE26341D4B011800C41FFB /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
+		0BFE26351D4B011800C41FFB /* DefaultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultViewController.xib; sourceTree = "<group>"; };
+		0BFE26401D4B011800C41FFB /* PrefixHeaders.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeaders.pch; sourceTree = "<group>"; };
+		0BFE26491D4B013900C41FFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0BFE264A1D4B013900C41FFB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BFE25EC1D4B004600C41FFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BFE26051D4B004600C41FFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BFE26101D4B004600C41FFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BFE25E61D4B004600C41FFB = {
+			isa = PBXGroup;
+			children = (
+				0BFE25F11D4B004600C41FFB /* HangDuoDuo */,
+				0BFE260B1D4B004600C41FFB /* HangDuoDuoTests */,
+				0BFE26161D4B004600C41FFB /* HangDuoDuoUITests */,
+				0BFE25F01D4B004600C41FFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BFE25F01D4B004600C41FFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE25EF1D4B004600C41FFB /* HangDuoDuo.app */,
+				0BFE26081D4B004600C41FFB /* HangDuoDuoTests.xctest */,
+				0BFE26131D4B004600C41FFB /* HangDuoDuoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BFE25F11D4B004600C41FFB /* HangDuoDuo */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE26481D4B013900C41FFB /* AppDelegate */,
+				0BFE26281D4B011800C41FFB /* Classes */,
+				0BFE263C1D4B011800C41FFB /* Macros */,
+				0BFE263D1D4B011800C41FFB /* Resources */,
+				0BFE26411D4B011800C41FFB /* Vendors */,
+				0BFE25FB1D4B004600C41FFB /* Main.storyboard */,
+				0BFE25FE1D4B004600C41FFB /* Assets.xcassets */,
+				0BFE26001D4B004600C41FFB /* LaunchScreen.storyboard */,
+				0BFE26031D4B004600C41FFB /* Info.plist */,
+				0BFE25F21D4B004600C41FFB /* Supporting Files */,
+			);
+			path = HangDuoDuo;
+			sourceTree = "<group>";
+		};
+		0BFE25F21D4B004600C41FFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE25F31D4B004600C41FFB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BFE260B1D4B004600C41FFB /* HangDuoDuoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE260C1D4B004600C41FFB /* HangDuoDuoTests.m */,
+				0BFE260E1D4B004600C41FFB /* Info.plist */,
+			);
+			path = HangDuoDuoTests;
+			sourceTree = "<group>";
+		};
+		0BFE26161D4B004600C41FFB /* HangDuoDuoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE26171D4B004600C41FFB /* HangDuoDuoUITests.m */,
+				0BFE26191D4B004600C41FFB /* Info.plist */,
+			);
+			path = HangDuoDuoUITests;
+			sourceTree = "<group>";
+		};
+		0BFE26281D4B011800C41FFB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE26291D4B011800C41FFB /* ClassFactorys */,
+				0BFE262E1D4B011800C41FFB /* Controllers */,
+				0BFE26381D4B011800C41FFB /* Models */,
+				0BFE26391D4B011800C41FFB /* Tools */,
+				0BFE263A1D4B011800C41FFB /* ViewModels */,
+				0BFE263B1D4B011800C41FFB /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0BFE26291D4B011800C41FFB /* ClassFactorys */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE262A1D4B011800C41FFB /* AppWindowFactory.h */,
+				0BFE262B1D4B011800C41FFB /* AppWindowFactory.m */,
+				0BFE262C1D4B011800C41FFB /* BaseClassFactory.h */,
+				0BFE262D1D4B011800C41FFB /* BaseClassFactory.m */,
+			);
+			path = ClassFactorys;
+			sourceTree = "<group>";
+		};
+		0BFE262E1D4B011800C41FFB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE262F1D4B011800C41FFB /* BaseViewController */,
+				0BFE26361D4B011800C41FFB /* DefautViewController */,
+				0BFE26371D4B011800C41FFB /* RootViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0BFE262F1D4B011800C41FFB /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE26301D4B011800C41FFB /* BaseViewController.h */,
+				0BFE26311D4B011800C41FFB /* BaseViewController.m */,
+				0BFE26321D4B011800C41FFB /* BaseViewController.xib */,
+				0BFE26331D4B011800C41FFB /* DefaultViewController.h */,
+				0BFE26341D4B011800C41FFB /* DefaultViewController.m */,
+				0BFE26351D4B011800C41FFB /* DefaultViewController.xib */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		0BFE26361D4B011800C41FFB /* DefautViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DefautViewController;
+			sourceTree = "<group>";
+		};
+		0BFE26371D4B011800C41FFB /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		0BFE26381D4B011800C41FFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BFE26391D4B011800C41FFB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0BFE263A1D4B011800C41FFB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0BFE263B1D4B011800C41FFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0BFE263C1D4B011800C41FFB /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		0BFE263D1D4B011800C41FFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE263E1D4B011800C41FFB /* Images */,
+				0BFE263F1D4B011800C41FFB /* Others */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BFE263E1D4B011800C41FFB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0BFE263F1D4B011800C41FFB /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE26401D4B011800C41FFB /* PrefixHeaders.pch */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		0BFE26411D4B011800C41FFB /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		0BFE26481D4B013900C41FFB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE26491D4B013900C41FFB /* AppDelegate.h */,
+				0BFE264A1D4B013900C41FFB /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BFE25EE1D4B004600C41FFB /* HangDuoDuo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BFE261C1D4B004600C41FFB /* Build configuration list for PBXNativeTarget "HangDuoDuo" */;
+			buildPhases = (
+				0BFE25EB1D4B004600C41FFB /* Sources */,
+				0BFE25EC1D4B004600C41FFB /* Frameworks */,
+				0BFE25ED1D4B004600C41FFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HangDuoDuo;
+			productName = HangDuoDuo;
+			productReference = 0BFE25EF1D4B004600C41FFB /* HangDuoDuo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BFE26071D4B004600C41FFB /* HangDuoDuoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BFE261F1D4B004600C41FFB /* Build configuration list for PBXNativeTarget "HangDuoDuoTests" */;
+			buildPhases = (
+				0BFE26041D4B004600C41FFB /* Sources */,
+				0BFE26051D4B004600C41FFB /* Frameworks */,
+				0BFE26061D4B004600C41FFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BFE260A1D4B004600C41FFB /* PBXTargetDependency */,
+			);
+			name = HangDuoDuoTests;
+			productName = HangDuoDuoTests;
+			productReference = 0BFE26081D4B004600C41FFB /* HangDuoDuoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0BFE26121D4B004600C41FFB /* HangDuoDuoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BFE26221D4B004600C41FFB /* Build configuration list for PBXNativeTarget "HangDuoDuoUITests" */;
+			buildPhases = (
+				0BFE260F1D4B004600C41FFB /* Sources */,
+				0BFE26101D4B004600C41FFB /* Frameworks */,
+				0BFE26111D4B004600C41FFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BFE26151D4B004600C41FFB /* PBXTargetDependency */,
+			);
+			name = HangDuoDuoUITests;
+			productName = HangDuoDuoUITests;
+			productReference = 0BFE26131D4B004600C41FFB /* HangDuoDuoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BFE25E71D4B004600C41FFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Beijing Galaxy Hangduoduo Technology Co., Ltd";
+				TargetAttributes = {
+					0BFE25EE1D4B004600C41FFB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0BFE26071D4B004600C41FFB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 0BFE25EE1D4B004600C41FFB;
+					};
+					0BFE26121D4B004600C41FFB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 0BFE25EE1D4B004600C41FFB;
+					};
+				};
+			};
+			buildConfigurationList = 0BFE25EA1D4B004600C41FFB /* Build configuration list for PBXProject "HangDuoDuo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BFE25E61D4B004600C41FFB;
+			productRefGroup = 0BFE25F01D4B004600C41FFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BFE25EE1D4B004600C41FFB /* HangDuoDuo */,
+				0BFE26071D4B004600C41FFB /* HangDuoDuoTests */,
+				0BFE26121D4B004600C41FFB /* HangDuoDuoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BFE25ED1D4B004600C41FFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BFE26471D4B011800C41FFB /* DefaultViewController.xib in Resources */,
+				0BFE26021D4B004600C41FFB /* LaunchScreen.storyboard in Resources */,
+				0BFE26451D4B011800C41FFB /* BaseViewController.xib in Resources */,
+				0BFE25FF1D4B004600C41FFB /* Assets.xcassets in Resources */,
+				0BFE25FD1D4B004600C41FFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BFE26061D4B004600C41FFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BFE26111D4B004600C41FFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BFE25EB1D4B004600C41FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BFE264F1D4B022A00C41FFB /* AppWindowFactory.h in Sources */,
+				0BFE26501D4B022A00C41FFB /* BaseClassFactory.h in Sources */,
+				0BFE264E1D4B021E00C41FFB /* AppWindowFactory.m in Sources */,
+				0BFE26461D4B011800C41FFB /* DefaultViewController.m in Sources */,
+				0BFE264C1D4B013900C41FFB /* AppDelegate.m in Sources */,
+				0BFE26441D4B011800C41FFB /* BaseViewController.m in Sources */,
+				0BFE26431D4B011800C41FFB /* BaseClassFactory.m in Sources */,
+				0BFE25F41D4B004600C41FFB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BFE26041D4B004600C41FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BFE260D1D4B004600C41FFB /* HangDuoDuoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BFE260F1D4B004600C41FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BFE26181D4B004600C41FFB /* HangDuoDuoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BFE260A1D4B004600C41FFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BFE25EE1D4B004600C41FFB /* HangDuoDuo */;
+			targetProxy = 0BFE26091D4B004600C41FFB /* PBXContainerItemProxy */;
+		};
+		0BFE26151D4B004600C41FFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BFE25EE1D4B004600C41FFB /* HangDuoDuo */;
+			targetProxy = 0BFE26141D4B004600C41FFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0BFE25FB1D4B004600C41FFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BFE25FC1D4B004600C41FFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0BFE26001D4B004600C41FFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BFE26011D4B004600C41FFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BFE261A1D4B004600C41FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BFE261B1D4B004600C41FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BFE261D1D4B004600C41FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HangDuoDuo/Resources/Others/PrefixHeaders.pch";
+				INFOPLIST_FILE = HangDuoDuo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hangdd.com.HangDuoDuo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Debug;
+		};
+		0BFE261E1D4B004600C41FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HangDuoDuo/Resources/Others/PrefixHeaders.pch";
+				INFOPLIST_FILE = HangDuoDuo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hangdd.com.HangDuoDuo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Release;
+		};
+		0BFE26201D4B004600C41FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HangDuoDuoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hangdd.com.HangDuoDuoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HangDuoDuo.app/HangDuoDuo";
+			};
+			name = Debug;
+		};
+		0BFE26211D4B004600C41FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HangDuoDuoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hangdd.com.HangDuoDuoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HangDuoDuo.app/HangDuoDuo";
+			};
+			name = Release;
+		};
+		0BFE26231D4B004600C41FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HangDuoDuoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hangdd.com.HangDuoDuoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HangDuoDuo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0BFE26241D4B004600C41FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HangDuoDuoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hangdd.com.HangDuoDuoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HangDuoDuo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BFE25EA1D4B004600C41FFB /* Build configuration list for PBXProject "HangDuoDuo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BFE261A1D4B004600C41FFB /* Debug */,
+				0BFE261B1D4B004600C41FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BFE261C1D4B004600C41FFB /* Build configuration list for PBXNativeTarget "HangDuoDuo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BFE261D1D4B004600C41FFB /* Debug */,
+				0BFE261E1D4B004600C41FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BFE261F1D4B004600C41FFB /* Build configuration list for PBXNativeTarget "HangDuoDuoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BFE26201D4B004600C41FFB /* Debug */,
+				0BFE26211D4B004600C41FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BFE26221D4B004600C41FFB /* Build configuration list for PBXNativeTarget "HangDuoDuoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BFE26231D4B004600C41FFB /* Debug */,
+				0BFE26241D4B004600C41FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BFE25E71D4B004600C41FFB /* Project object */;
+}

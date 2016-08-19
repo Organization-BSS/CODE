@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:DesignPattern/DesignPattern_CommondPattern"
+      name = "DesignPattern_CommondPattern">
+      <Group
+         location = "group:DesignPattern_CommondPattern"
+         name = "DesignPattern_CommondPattern">
+         <FileRef
+            location = "group:AbstractCommond.h">
+         </FileRef>
+         <FileRef
+            location = "group:AbstractCommond.m">
+         </FileRef>
+         <FileRef
+            location = "group:ConcreteCommond_TurnOff.h">
+         </FileRef>
+         <FileRef
+            location = "group:ConcreteCommond_TurnOff.m">
+         </FileRef>
+         <FileRef
+            location = "group:ConcreteCommond_TurnOn.h">
+         </FileRef>
+         <FileRef
+            location = "group:ConcreteCommond_TurnOn.m">
+         </FileRef>
+         <FileRef
+            location = "group:Control.h">
+         </FileRef>
+         <FileRef
+            location = "group:Control.m">
+         </FileRef>
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <FileRef
+            location = "group:TV.h">
+         </FileRef>
+         <FileRef
+            location = "group:TV.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:DesignPattern_CommondPattern.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:DesignPattern/DesignPatter_Prototype"
+      name = "DesignPatter_Prototype">
+      <Group
+         location = "group:DesignPatter_Prototype"
+         name = "DesignPatter_Prototype">
+         <FileRef
+            location = "group:AppDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.m">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:DataModel.h">
+         </FileRef>
+         <FileRef
+            location = "group:DataModel.m">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <FileRef
+            location = "group:Prototype.h">
+         </FileRef>
+         <FileRef
+            location = "group:Prototype.m">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:DesignPatter_Prototype.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:DesignPatter_PrototypeTests"
+         name = "DesignPatter_PrototypeTests">
+         <FileRef
+            location = "group:DesignPatter_PrototypeTests.m">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:DesignPatter_PrototypeUITests"
+         name = "DesignPatter_PrototypeUITests">
+         <FileRef
+            location = "group:DesignPatter_PrototypeUITests.m">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
