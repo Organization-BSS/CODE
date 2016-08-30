@@ -17,7 +17,6 @@
 		0BC011B21D65574B009D9729 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC011AA1D65574B009D9729 /* RootViewController.m */; };
 		0BC011B31D65574B009D9729 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BC011AB1D65574B009D9729 /* RootViewController.xib */; };
 		0BC011B61D65587F009D9729 /* SSBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC011B51D65587F009D9729 /* SSBView.m */; };
-		0BC011B81D65817E009D9729 /* 研究_UIView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BC011B71D65817E009D9729 /* 研究_UIView.strings */; };
 		0BC011BA1D658320009D9729 /* UIView.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0BC011B91D658320009D9729 /* UIView.rtf */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +57,6 @@
 		0BC011AB1D65574B009D9729 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = Demo_UI_UIView/RootViewController.xib; sourceTree = SOURCE_ROOT; };
 		0BC011B41D65587F009D9729 /* SSBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBView.h; sourceTree = SOURCE_ROOT; };
 		0BC011B51D65587F009D9729 /* SSBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBView.m; sourceTree = SOURCE_ROOT; };
-		0BC011B71D65817E009D9729 /* 研究_UIView.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "研究_UIView.strings"; sourceTree = SOURCE_ROOT; };
 		0BC011B91D658320009D9729 /* UIView.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = UIView.rtf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -159,7 +157,6 @@
 				0BC011AB1D65574B009D9729 /* RootViewController.xib */,
 				0BC011B41D65587F009D9729 /* SSBView.h */,
 				0BC011B51D65587F009D9729 /* SSBView.m */,
-				0BC011B71D65817E009D9729 /* 研究_UIView.strings */,
 				0BC011B91D658320009D9729 /* UIView.rtf */,
 			);
 			name = Classes;
@@ -283,7 +280,6 @@
 				0BC011AE1D65574B009D9729 /* Assets.xcassets in Resources */,
 				0BC011BA1D658320009D9729 /* UIView.rtf in Resources */,
 				0BC011B01D65574B009D9729 /* Info.plist in Resources */,
-				0BC011B81D65817E009D9729 /* 研究_UIView.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

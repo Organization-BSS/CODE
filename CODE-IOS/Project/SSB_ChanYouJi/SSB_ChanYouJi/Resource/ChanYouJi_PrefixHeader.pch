@@ -1,0 +1,15 @@
+//
+//  ChanYouJi_PrefixHeader.pch
+//  SSB_ChanYouJi
+//
+//  Created by bss on 16/8/29.
+//  Copyright © 2016年 BSS. All rights reserved.
+//
+
+#ifndef ChanYouJi_PrefixHeader_pch
+#define ChanYouJi_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ChanYouJi_PrefixHeader_pch */

@@ -1,0 +1,78 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.5.0):
+    - CocoaAsyncSocket/GCD (= 7.5.0)
+  - CocoaAsyncSocket/GCD (7.5.0)
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
+  - DateTools (1.7.0)
+  - DDLogger (1.1.4):
+    - ICTextView (~> 2.0.1)
+  - FontAwesome+iOS (0.1.4)
+  - ICTextView (2.0.1)
+  - JSONModel (1.3.0)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - Masonry (1.0.1)
+  - MJRefresh (3.1.12)
+  - PPiAwesomeButton (1.5.2):
+    - FontAwesome+iOS
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - TPKeyboardAvoiding (1.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - CocoaAsyncSocket (~> 7.5.0)
+  - CocoaLumberjack (~> 2.3.0)
+  - DateTools (~> 1.7.0)
+  - DDLogger (~> 1.1.4)
+  - JSONModel (~> 1.3.0)
+  - Mantle (~> 2.0.7)
+  - Masonry (~> 1.0.1)
+  - MJRefresh (~> 3.1.12)
+  - PPiAwesomeButton (~> 1.5.2)
+  - SDWebImage (~> 3.8.1)
+  - TPKeyboardAvoiding (~> 1.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  DDLogger: 8460f2bd703e5f035bd98a5d641fcd89f94d4a7a
+  FontAwesome+iOS: 9070b682a9255ca0fdc34bcfb129ad0ba2b73b87
+  ICTextView: 937aca5dd49e39e9cca41ababe8c55bf99c634fc
+  JSONModel: 81c06ecf99190a25fa6aafceea5faffa7880868a
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PPiAwesomeButton: 16f7279582fd36f65186b24b83ef876217363eb5
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+
+PODFILE CHECKSUM: 9e0b7d6a87c417b6f674123a2761a2d81148ecdc
+
+COCOAPODS: 1.0.1

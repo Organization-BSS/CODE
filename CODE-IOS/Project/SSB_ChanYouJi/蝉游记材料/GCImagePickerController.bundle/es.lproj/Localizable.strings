@@ -1,0 +1,27 @@
+/*
+ 
+ Created by Caleb Davenport on 3/17/11.
+ Copyright 2011-2012 Caleb Davenport.
+ 
+ */
+
+// title of main photo library view
+"PHOTO_LIBRARY" = "Biblioteca de fotos";
+
+// title when one item is selected
+"PHOTO_COUNT_SINGLE" = "1 elemento";
+
+// title when multiple items are selected
+"PHOTO_COUNT_MULTIPLE" = "%@ elementos";
+
+// title of alert when an error occurs
+"ERROR" = "Error";
+
+// title for ok button
+"OK" = "Aceptar";
+
+// message for an unkown error
+"UNKNOWN_LIBRARY_ERROR" = "Se ha producido un error desconocido.";
+
+// message for instances where access has not been granted to see the photo library
+"PHOTO_ROLL_ACCESS_ERROR" = "%@ no tiene autorización para acceder a tu Biblioteca de fotos.";

@@ -23,7 +23,9 @@
     ssbView.backgroundColor = [UIColor yellowColor];
     
     [[[[UIApplication sharedApplication]delegate]window].rootViewController.view addSubview:ssbView];
-//    self.view.backgroundColor = [UIColor redColor];
+    NSLog(@"%@",[[[UIApplication sharedApplication]delegate]window].rootViewController.view);
+    NSLog(@"%@",self.view);
+
     [ssbView test];
 }
 
@@ -33,7 +35,7 @@
 }
 
 /*
-#pragma mark - Navigation
+#pragma mark - Navigationz
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

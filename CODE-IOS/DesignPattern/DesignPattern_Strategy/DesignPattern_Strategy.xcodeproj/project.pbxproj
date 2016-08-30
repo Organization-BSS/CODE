@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2720F01D6852D500347E18 /* MovieTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2720EF1D6852D500347E18 /* MovieTicket.m */; };
+		0B2720F41D6853B400347E18 /* ChildDiscount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2720F31D6853B400347E18 /* ChildDiscount.m */; };
+		0B2720F71D6853C700347E18 /* StudentDiscount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2720F61D6853C700347E18 /* StudentDiscount.m */; };
 		0B9A8D7F1D4F2A1500790BB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A8D7E1D4F2A1500790BB7 /* main.m */; };
 		0B9A8D821D4F2A1500790BB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A8D811D4F2A1500790BB7 /* AppDelegate.m */; };
 		0B9A8D851D4F2A1500790BB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A8D841D4F2A1500790BB7 /* ViewController.m */; };
@@ -38,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2720EE1D6852D500347E18 /* MovieTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTicket.h; sourceTree = "<group>"; };
+		0B2720EF1D6852D500347E18 /* MovieTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTicket.m; sourceTree = "<group>"; };
+		0B2720F11D68533000347E18 /* Discount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Discount.h; sourceTree = "<group>"; };
+		0B2720F21D6853B400347E18 /* ChildDiscount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildDiscount.h; sourceTree = "<group>"; };
+		0B2720F31D6853B400347E18 /* ChildDiscount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildDiscount.m; sourceTree = "<group>"; };
+		0B2720F51D6853C600347E18 /* StudentDiscount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentDiscount.h; sourceTree = "<group>"; };
+		0B2720F61D6853C700347E18 /* StudentDiscount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentDiscount.m; sourceTree = "<group>"; };
 		0B9A8D7A1D4F2A1500790BB7 /* DesignPattern_Strategy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPattern_Strategy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9A8D7E1D4F2A1500790BB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B9A8D801D4F2A1500790BB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +98,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2720ED1D6852A900347E18 /* SecondStrategry */ = {
+			isa = PBXGroup;
+			children = (
+				0B2720EE1D6852D500347E18 /* MovieTicket.h */,
+				0B2720EF1D6852D500347E18 /* MovieTicket.m */,
+				0B2720F21D6853B400347E18 /* ChildDiscount.h */,
+				0B2720F31D6853B400347E18 /* ChildDiscount.m */,
+				0B2720F51D6853C600347E18 /* StudentDiscount.h */,
+				0B2720F61D6853C700347E18 /* StudentDiscount.m */,
+				0B2720F11D68533000347E18 /* Discount.h */,
+			);
+			path = SecondStrategry;
+			sourceTree = "<group>";
+		};
 		0B9A8D711D4F2A1500790BB7 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +135,7 @@
 		0B9A8D7C1D4F2A1500790BB7 /* DesignPattern_Strategy */ = {
 			isa = PBXGroup;
 			children = (
+				0B2720ED1D6852A900347E18 /* SecondStrategry */,
 				0BAC5DBE1D4F392D00D1A61D /* Strategy */,
 				0B9A8D801D4F2A1500790BB7 /* AppDelegate.h */,
 				0B9A8D811D4F2A1500790BB7 /* AppDelegate.m */,
@@ -297,10 +322,13 @@
 			files = (
 				0BAC5DC81D4F3A1B00D1A61D /* Strategy_sub.m in Sources */,
 				0BAC5DC51D4F39B700D1A61D /* Strategy_add.m in Sources */,
+				0B2720F01D6852D500347E18 /* MovieTicket.m in Sources */,
 				0B9A8D851D4F2A1500790BB7 /* ViewController.m in Sources */,
+				0B2720F71D6853C700347E18 /* StudentDiscount.m in Sources */,
 				0B9A8D821D4F2A1500790BB7 /* AppDelegate.m in Sources */,
 				0BAC5DCB1D4F3A9200D1A61D /* StrategyContext.m in Sources */,
 				0B9A8D7F1D4F2A1500790BB7 /* main.m in Sources */,
+				0B2720F41D6853B400347E18 /* ChildDiscount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
