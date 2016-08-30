@@ -23,8 +23,8 @@
     // Override point for customization after application launch.
     _window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
 //    SSBTabBarController_Runtime *viewController = [[SSBTabBarController_Runtime alloc]init];
-//    SSBTabBarController *viewController = [[SSBTabBarController alloc]init];
-    SSBCustomTabBarViewController *viewController = [[SSBCustomTabBarViewController alloc]init];
+    SSBTabBarController *viewController = [[SSBTabBarController alloc]init];
+//    SSBCustomTabBarViewController *viewController = [[SSBCustomTabBarViewController alloc]init];
     
 
     _window.rootViewController = viewController;

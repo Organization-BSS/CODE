@@ -57,11 +57,6 @@
                     NSString *titile = [vi valueForKey:@"text"];
                     NSLog(@"titile is:%@",titile);
                     if ([titile isEqualToString:@"我"]) {
-                        [vi setValue:@"我" forKeyPath:@"text"];
-
-//                        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(-10, -2, 40, 12)];
-//                        view.backgroundColor = [UIColor whiteColor];
-//                        [vi.layer addSublayer:view.layer];
                         AppDelegate *app = [[UIApplication sharedApplication]delegate];
                         app.bottomView = vi;
                     }

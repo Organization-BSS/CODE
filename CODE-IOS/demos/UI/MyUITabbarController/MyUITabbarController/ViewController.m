@@ -13,6 +13,7 @@
 @interface ViewController () {
     UILabel *la; // test bottom tabbar view content
     int i ;// increase numbers
+    NSTimer *ssbTimer; // timer
 }
 
 @end
@@ -42,25 +43,38 @@
 
 - (void)pressed:(id)object {
     NSLog(@"pressed");
-    AppDelegate *app = [[UIApplication sharedApplication]delegate];
-    NSLog(@"%@",app.bottomView);
-    [app.bottomView setValue:@"我" forKey:@"text"];
-    i++;
-    NSString *sr = [NSString stringWithFormat:@"%d",i];
-    if (!la) {
-        
-        la = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 20, 10)];
-        la.backgroundColor = [UIColor greenColor];
-        [app.bottomView addSubview:la];
-    } else {
-    }
-    la.text = sr;
-    if (i == 5) {
-        [app.bottomView setValue:@"我" forKey:@"text"];
-        [la removeFromSuperview];
-    }
     
+    [self startTimer];
 }
 
+// 倒计时
+- (void)startTimer {
+    ssbTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(changeTimeLable:) userInfo:nil repeats:YES];
+    [ssbTimer fire];
+    [[NSRunLoop currentRunLoop]addTimer:ssbTimer forMode:NSRunLoopCommonModes];
+}
+
+// 倒计时method
+- (void)changeTimeLable:(NSTimer *)timer {
+    i++;
+    AppDelegate *app = [[UIApplication sharedApplication]delegate];
+    NSLog(@"%@",app.bottomView);
+    NSString *sr = [NSString stringWithFormat:@"0:%d",i];
+    if (!la) {
+        la = [[UILabel alloc]initWithFrame:CGRectMake(-15, -5, 40, 15)];
+        la.textAlignment = NSTextAlignmentCenter;
+        la.backgroundColor = [UIColor greenColor];
+    }
+    [app.bottomView addSubview:la];
+
+    if (i==11) {
+        [ssbTimer invalidate];
+        [app.bottomView setValue:@"我" forKey:@"text"];
+        [la removeFromSuperview];
+        i = 0;
+    }
+    
+        la.text = sr;
+}
 
 @end
