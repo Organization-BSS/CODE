@@ -12,5 +12,10 @@
 // 获取类名
 #define CLASS_STRING(X) NSStringFromClass([X class])
 
+// 创建UIImae
+#define SSBIMAGEWITHNAME(X) [UIImage imageNamed:X]
+
+// 对象初始化
+#define SSBINITOBJECT(X) [[X alloc]init]
 
 #endif /* SSB_MethodDefine_h */
