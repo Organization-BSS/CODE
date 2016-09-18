@@ -22,8 +22,11 @@
     
     
      SSBTabBarController *vc = [[SSBTabBarController alloc]init];
+    
     _window.rootViewController = vc;
     [_window makeKeyAndVisible];
+  
+    
     
     return YES;
 }

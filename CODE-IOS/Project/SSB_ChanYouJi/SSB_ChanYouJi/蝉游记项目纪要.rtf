@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset134 STSongti-SC-Regular;\f4\froman\fcharset0 Times-Roman;\f5\fnil\fcharset0 HelveticaNeue;
+\f6\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red0\green0\blue233;\red92\green38\blue153;
+\red46\green13\blue110;\red170\green13\blue145;\red28\green0\blue207;\red63\green110\blue116;\red38\green71\blue75;
+\red196\green26\blue22;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i\fs24 \cf0 1. UITabBar 
+\f1\i0 \'c9\'e8\'d6\'c3\'d1\'a1\'d6\'d0\'b5\'c4
+\f0\i image
+\f1\i0 \'b5\'c4\'c7\'e9\'bf\'f6\'a3\'ac\'cd\'bc\'cf\'f1\'d3\'d0\'d1\'b9\'cb\'f5\'b5\'c4\'c7\'e9\'bf\'f6\'a3\'ac\'ca\'b9\'d3\'c3\'b5\'bd\'c8\'e7\'cf\'c2\'b4\'fa\'c2\'eb\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs36 \cf0     UIImage *selImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];\
+2.
+\f1 \'d0\'de\'b8\'c4
+\f2 statusbar 
+\f1 \'b5\'c4\'d1\'d5\'c9\'ab
+\f2 \
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+
+\f3\fs24 \cf0 \expnd0\expndtw0\kerning0
+\'bd\'f1\'cc\'ec\'d0\'de\'b8\'c4
+\f4 StatusBar
+\f3 \'b5\'c4\'d7\'d6\'cc\'e5\'d1\'d5\'c9\'ab\'a3\'ac\'b7\'a2\'cf\'d6
+\f4 iOS8
+\f3 \'c9\'cf\'d6\'bb\'d3\'c3
+\f5 \cf2 [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+\f1 \'ca\'c7\'c3\'bb\'d3\'d0\'d0\'a7\'b9\'fb\'b5\'c4\'a3\'ac\'d4\'da\'cd\'f8\'c9\'cf\'b2\'e9\'c1\'cb\'cf\'c2\'a3\'ac\'b0\'b4\'d5\'d5\'d5\'e2\'c0\'ef\'cc\'e1\'b9\'a9\'b5\'c4\'b7\'bd\'b7\'a8{\field{\*\fldinst{HYPERLINK "http://www.cocoachina.com/bbs/read.php?tid=246354"}}{\fldrslt 
+\f5 \cf3 \ul \ulc3 http://www.cocoachina.com/bbs/read.php?tid=246354}}\'d0\'de\'b8\'c4\'b3\'c9\'b9\'a6\'a3\'ac\'d4\'da
+\f5 iOS7
+\f1 \'c9\'cf\'d2\'b2\'d3\'d0\'d0\'a7\'a3\'ac\'be\'df\'cc\'e5\'ca\'c7\'a3\'ba
+\f4 \cf0 \
+\pard\pardeftab720\sl480\sa240\partightenfactor0
+
+\f1 \cf2 \'d4\'da
+\f5 info.plist
+\f1 \'c0\'ef\'cc\'ed\'bc\'d3
+\f5 View controller-based status bar appearance
+\f1 \'a3\'ac\'c9\'e8\'d6\'c3\'d6\'b5\'ce\'aa
+\f5 NO
+\f1 \'a3\'ac\'cd\'ac\'ca\'b1\'b4\'fa\'c2\'eb\'c0\'ef\'cc\'ed\'bc\'d3
+\f5 [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+\f1 \
+\'cf\'e0\'b9\'d8\'b5\'d8\'d6\'b7\'a3\'bahttp://my.oschina.net/shede333/blog/304560\
+
+\f4\b \cf0 \kerning1\expnd0\expndtw0 3. 
+\f3 \'cf\'d4\'ca\'be\'ba\'cd\'d2\'fe\'b2\'d8\'b5\'d7\'b2\'bf
+\f4 tabbar
+\f3 \'b5\'c4\'b7\'bd\'ca\'bd
+\f4\b0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf0 //1.
+\f1 \'c9\'e8\'d6\'c3
+\f6 self.tabBarController.tabBar.hidden=YES;
+\f4 \
+
+\f6 \'a0\'a0\'a0\'a0
+\f4 \'a0\
+
+\f6 self.tabBarController.tabBar.hidden=YES;
+\f4 \
+\'a0\
+
+\f6 //2.
+\f1 \'c8\'e7\'b9\'fb\'d4\'da
+\f6 push
+\f1 \'cc\'f8\'d7\'aa\'ca\'b1\'d0\'e8\'d2\'aa\'d2\'fe\'b2\'d8
+\f6 tabBar
+\f1 \'a3\'ac\'c9\'e8\'d6\'c3
+\f6 self.hidesBottomBarWhenPushed=YES;
+\f4 \
+\'a0\
+
+\f6 \'a0\'a0\'a0\'a0self.hidesBottomBarWhenPushed=YES;
+\f4 \
+
+\f6 \'a0\'a0\'a0\'a0NextViewController *next=[[NextViewController alloc]init];
+\f4 \
+
+\f6 \'a0\'a0\'a0\'a0[self.navigationController pushViewController:next animated:YES];
+\f4 \
+
+\f6 \'a0\'a0\'a0\'a0self.hidesBottomBarWhenPushed=NO;
+\f4 \
+\'a0\
+
+\f6 //
+\f1 \'b2\'a2\'d4\'da
+\f6 push
+\f1 \'ba\'f3\'c9\'e8\'d6\'c3
+\f6 self.hidesBottomBarWhenPushed=NO;
+\f4 \
+
+\f6 //
+\f1 \'d5\'e2\'d1\'f9
+\f6 back
+\f1 \'bb\'d8\'c0\'b4\'b5\'c4\'ca\'b1\'ba\'f2\'a3\'ac
+\f6 tabBar
+\f1 \'bb\'e1\'bb\'d6\'b8\'b4\'d5\'fd\'b3\'a3\'cf\'d4\'ca\'be\'a1\'a3
+\f4 \
+\pard\pardeftab720\sl480\sa240\partightenfactor0
+\cf0 \
+4. 
+\f3 \'c9\'e8\'d6\'c3leftbarbuttonitem \'bb\'f2\'d5\'dfrightbarbuttonitem\'d3\'eb\'d7\'f3\'d3\'d2\'b1\'df\'b5\'c4\'be\'e0\'c0\'eb\
+//  \'b1\'e0\'d0\'b4\'bf\'d5\'b0\'d7\'b5\'c4item \'a3\'ac\'b2\'a2\'c7\'d2\'c9\'e8\'d6\'c3\'bf\'ed\'b6\'c8\'ce\'aa\'b8\'ba\'ca\'fd\'a3\'ac\'d5\'fd\'ca\'fd\'b1\'ed\'ca\'be\'d3\'eb\'b1\'df\'b5\'c4\'be\'e0\'c0\'eb\
+\pard\tx866\pardeftab866\pardirnatural\partightenfactor0
+
+\f2\fs36 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 	UIBarButtonItem\cf0  *negativeSeperator = [[\cf4 UIBarButtonItem\cf0  \cf5 alloc\cf0 ] 		\cf5 initWithBarButtonSystemItem\cf0 :\cf5 UIBarButtonSystemItemFixedSpace\cf0  \cf5 target\cf0 :\cf6 nil\cf0  \cf5 action\cf0 :\cf6 nil\cf0 ];\
+    negativeSeperator.\cf4 width\cf0  = -\cf7 20\cf0 ;\
+    \
+    \cf6 self\cf0 .\cf4 navigationItem\cf0 .\cf4 leftBarButtonItems\cf0  = \cf7 @[\cf0 negativeSeperator,[\cf8 SSBBarButtonItem\cf0  \cf9 leftBarButtonItemController\cf0 :\cf6 self\cf0  \cf9 image\cf0 :[[\cf4 UIImage\cf0  \cf5 imageNamed\cf0 :\cf10 @"BackBarButton"\cf0 ] \cf5 imageWithRenderingMode\cf0 :\cf5 UIImageRenderingModeAlwaysOriginal\cf0 ] \cf9 action\cf0 :\cf6 @selector\cf0 (settingButtonClicked:)]\cf7 ]\cf0 ;
+\f4\fs24 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+}

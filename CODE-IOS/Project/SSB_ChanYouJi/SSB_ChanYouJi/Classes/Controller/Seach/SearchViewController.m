@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  SearchViewController.m
 //  SSB_ChanYouJi
 //
-//  Created by bss on 16/8/29.
+//  Created by bss on 16/9/3.
 //  Copyright © 2016年 BSS. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SearchViewController.h"
 
-@interface ViewController ()
+@interface SearchViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

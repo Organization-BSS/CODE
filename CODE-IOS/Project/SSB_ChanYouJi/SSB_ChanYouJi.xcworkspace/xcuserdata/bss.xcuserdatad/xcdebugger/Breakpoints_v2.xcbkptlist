@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SSB_ChanYouJi/Classes/Controller/YouJi/YouJiViewController.m"
+            timestampString = "495891108.954989"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "-addControlls"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[YouJiViewController addControlls]"
+                  moduleName = "SSB_ChanYouJi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bss/Desktop/SSB&apos;S%20Files/CODE/CODE-IOS/Project/SSB_ChanYouJi/SSB_ChanYouJi/Classes/Controller/YouJi/YouJiViewController.m"
+                  timestampString = "495885608.408053"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__35-[YouJiViewController addControlls]_block_invoke"
+                  moduleName = "SSB_ChanYouJi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bss/Desktop/SSB&apos;S%20Files/CODE/CODE-IOS/Project/SSB_ChanYouJi/SSB_ChanYouJi/Classes/Controller/YouJi/YouJiViewController.m"
+                  timestampString = "495885608.408341"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

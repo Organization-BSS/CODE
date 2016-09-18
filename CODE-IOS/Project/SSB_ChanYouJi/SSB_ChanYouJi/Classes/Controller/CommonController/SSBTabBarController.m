@@ -60,6 +60,9 @@
     UIImage *selImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UITabBarItem *item = [[UITabBarItem alloc]initWithTitle:titile image:image selectedImage:selImage];
     childController.tabBarItem = item;
-    [self addChildViewController:childController];
+    
+    SSBNavigationController *nav = [[SSBNavigationController alloc]initWithRootViewController:childController];
+    
+    [self addChildViewController:nav];
 }
 @end

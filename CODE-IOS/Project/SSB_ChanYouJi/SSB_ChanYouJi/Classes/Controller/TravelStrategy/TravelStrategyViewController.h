@@ -6,8 +6,8 @@
 //  Copyright © 2016年 BSS. All rights reserved.
 //
 
-#import "SSBBaseViewController.h"
+#import "SSBContainNavigationViewController.h"
 
-@interface TravelStrategyViewController : SSBBaseViewController
+@interface TravelStrategyViewController : SSBContainNavigationViewController
 
 @end

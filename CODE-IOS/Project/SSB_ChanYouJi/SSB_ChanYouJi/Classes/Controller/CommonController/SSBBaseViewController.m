@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = [self viewController:self controllerTitile:nil];
     // Do any additional setup after loading the view.
 }
 
@@ -33,5 +34,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (NSString *)viewController:(UIViewController *)viewController controllerTitile:(NSString *)str {
+    return nil;
+}
 @end

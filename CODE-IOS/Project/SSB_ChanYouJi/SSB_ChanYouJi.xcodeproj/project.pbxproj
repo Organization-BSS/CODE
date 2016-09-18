@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B01C1CA1D7A70A200F773EF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B01C1C81D7A70A200F773EF /* SearchViewController.m */; };
+		0B01C1CB1D7A70A200F773EF /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B01C1C91D7A70A200F773EF /* SearchViewController.xib */; };
 		0B29F31C1D73DF400074EBE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29F31B1D73DF400074EBE5 /* main.m */; };
 		0B29F31F1D73DF400074EBE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29F31E1D73DF400074EBE5 /* AppDelegate.m */; };
 		0B29F3251D73DF400074EBE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B29F3231D73DF400074EBE5 /* Main.storyboard */; };
@@ -14,8 +16,9 @@
 		0B29F32A1D73DF400074EBE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B29F3281D73DF400074EBE5 /* LaunchScreen.storyboard */; };
 		0B29F3351D73DF400074EBE5 /* SSB_ChanYouJiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29F3341D73DF400074EBE5 /* SSB_ChanYouJiTests.m */; };
 		0B29F3401D73DF400074EBE5 /* SSB_ChanYouJiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29F33F1D73DF400074EBE5 /* SSB_ChanYouJiUITests.m */; };
-		0B29F3531D73E04C0074EBE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29F3511D73E04C0074EBE5 /* ViewController.m */; };
-		0B29F3541D73E04C0074EBE5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B29F3521D73E04C0074EBE5 /* ViewController.xib */; };
+		0B3333571D7822E200665299 /* 蝉游记项目纪要.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0B3333561D7822E200665299 /* 蝉游记项目纪要.rtf */; };
+		0B3333591D78242000665299 /* 蝉游记项目纪要.docx in Resources */ = {isa = PBXBuildFile; fileRef = 0B3333581D78242000665299 /* 蝉游记项目纪要.docx */; };
+		0B33335C1D7824D700665299 /* SSBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B33335B1D7824D700665299 /* SSBNavigationController.m */; };
 		0B45E3CE1D76B8490030E5F0 /* SSBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B45E3CB1D76B8490030E5F0 /* SSBBaseViewController.m */; };
 		0B45E3CF1D76B8490030E5F0 /* SSBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B45E3CB1D76B8490030E5F0 /* SSBBaseViewController.m */; };
 		0B45E3D01D76B8490030E5F0 /* SSBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B45E3CB1D76B8490030E5F0 /* SSBBaseViewController.m */; };
@@ -58,6 +61,12 @@
 		0BAB239C1D76FD6600557E71 /* TabBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BAB23991D76FD6600557E71 /* TabBarBackground.png */; };
 		0BAB239D1D76FD6600557E71 /* TabBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BAB239A1D76FD6600557E71 /* TabBarBackground@2x.png */; };
 		0BAB239E1D76FD6600557E71 /* TabBarBackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BAB239B1D76FD6600557E71 /* TabBarBackground@3x.png */; };
+		0BD7CDE31D8E3EE500DC3987 /* SSBSegementControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7CDE21D8E3EE500DC3987 /* SSBSegementControll.m */; };
+		0BF08E931D7849BA00F563D6 /* SSBBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF08E921D7849BA00F563D6 /* SSBBarButtonItem.m */; };
+		0BF08E961D784B5100F563D6 /* SSBUIBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF08E951D784B5100F563D6 /* SSBUIBarButtonItem.m */; };
+		0BF08E991D790FB200F563D6 /* SSBContainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF08E981D790FB200F563D6 /* SSBContainNavigationViewController.m */; };
+		0BF08E9E1D792C5C00F563D6 /* SSBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF08E9C1D792C5C00F563D6 /* SSBSettingViewController.m */; };
+		0BF08E9F1D792C5C00F563D6 /* SSBSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF08E9D1D792C5C00F563D6 /* SSBSettingViewController.xib */; };
 		EC81E23030B9BBFD2B5F3933 /* libPods-SSB_ChanYouJi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFC797753794F421289CA7F /* libPods-SSB_ChanYouJi.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +88,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B01C1C71D7A70A200F773EF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		0B01C1C81D7A70A200F773EF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		0B01C1C91D7A70A200F773EF /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		0B29F3171D73DF400074EBE5 /* SSB_ChanYouJi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSB_ChanYouJi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B29F31B1D73DF400074EBE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B29F31D1D73DF400074EBE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,9 +105,11 @@
 		0B29F33B1D73DF400074EBE5 /* SSB_ChanYouJiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSB_ChanYouJiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B29F33F1D73DF400074EBE5 /* SSB_ChanYouJiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSB_ChanYouJiUITests.m; sourceTree = "<group>"; };
 		0B29F3411D73DF400074EBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B29F3501D73E04C0074EBE5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0B29F3511D73E04C0074EBE5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0B29F3521D73E04C0074EBE5 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		0B2DBDFF1D8EB506004594B3 /* ConstantValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantValues.h; sourceTree = "<group>"; };
+		0B3333561D7822E200665299 /* 蝉游记项目纪要.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "蝉游记项目纪要.rtf"; sourceTree = "<group>"; };
+		0B3333581D78242000665299 /* 蝉游记项目纪要.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "蝉游记项目纪要.docx"; sourceTree = "<group>"; };
+		0B33335A1D7824D700665299 /* SSBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBNavigationController.h; sourceTree = "<group>"; };
+		0B33335B1D7824D700665299 /* SSBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBNavigationController.m; sourceTree = "<group>"; };
 		0B45E3CA1D76B8490030E5F0 /* SSBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBBaseViewController.h; sourceTree = "<group>"; };
 		0B45E3CB1D76B8490030E5F0 /* SSBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBBaseViewController.m; sourceTree = "<group>"; };
 		0B45E3CC1D76B8490030E5F0 /* SSBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBTabBarController.h; sourceTree = "<group>"; };
@@ -120,10 +134,20 @@
 		0B46DA3C1D73E4DB009064F0 /* SSB_MethodDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSB_MethodDefine.h; sourceTree = "<group>"; };
 		0B46DA3D1D73E4F8009064F0 /* SSB_ConstantValueDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSB_ConstantValueDefine.h; sourceTree = "<group>"; };
 		0B46DA3F1D73E583009064F0 /* ChanYouJi_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChanYouJi_PrefixHeader.pch; sourceTree = "<group>"; };
-		0B77C2291D76E05B003C9262 /* Titiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Titiles.h; sourceTree = "<group>"; };
 		0BAB23991D76FD6600557E71 /* TabBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarBackground.png; sourceTree = "<group>"; };
 		0BAB239A1D76FD6600557E71 /* TabBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBarBackground@2x.png"; sourceTree = "<group>"; };
 		0BAB239B1D76FD6600557E71 /* TabBarBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBarBackground@3x.png"; sourceTree = "<group>"; };
+		0BD7CDE11D8E3EE500DC3987 /* SSBSegementControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBSegementControll.h; sourceTree = "<group>"; };
+		0BD7CDE21D8E3EE500DC3987 /* SSBSegementControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBSegementControll.m; sourceTree = "<group>"; };
+		0BF08E911D7849BA00F563D6 /* SSBBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBBarButtonItem.h; sourceTree = "<group>"; };
+		0BF08E921D7849BA00F563D6 /* SSBBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBBarButtonItem.m; sourceTree = "<group>"; };
+		0BF08E941D784B5100F563D6 /* SSBUIBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBUIBarButtonItem.h; sourceTree = "<group>"; };
+		0BF08E951D784B5100F563D6 /* SSBUIBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBUIBarButtonItem.m; sourceTree = "<group>"; };
+		0BF08E971D790FB200F563D6 /* SSBContainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBContainNavigationViewController.h; sourceTree = "<group>"; };
+		0BF08E981D790FB200F563D6 /* SSBContainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBContainNavigationViewController.m; sourceTree = "<group>"; };
+		0BF08E9B1D792C5C00F563D6 /* SSBSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBSettingViewController.h; sourceTree = "<group>"; };
+		0BF08E9C1D792C5C00F563D6 /* SSBSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBSettingViewController.m; sourceTree = "<group>"; };
+		0BF08E9D1D792C5C00F563D6 /* SSBSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSBSettingViewController.xib; sourceTree = "<group>"; };
 		A1C2B93F2174BFCFA0D6DDB9 /* Pods-SSB_ChanYouJi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSB_ChanYouJi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSB_ChanYouJi/Pods-SSB_ChanYouJi.debug.xcconfig"; sourceTree = "<group>"; };
 		CD1EAADDC51B6CFADF622733 /* Pods-SSB_ChanYouJi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSB_ChanYouJi.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSB_ChanYouJi/Pods-SSB_ChanYouJi.release.xcconfig"; sourceTree = "<group>"; };
 		DFFC797753794F421289CA7F /* libPods-SSB_ChanYouJi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSB_ChanYouJi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +179,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B01C1C61D7A706000F773EF /* Seach */ = {
+			isa = PBXGroup;
+			children = (
+				0B01C1C71D7A70A200F773EF /* SearchViewController.h */,
+				0B01C1C81D7A70A200F773EF /* SearchViewController.m */,
+				0B01C1C91D7A70A200F773EF /* SearchViewController.xib */,
+			);
+			path = Seach;
+			sourceTree = "<group>";
+		};
 		0B29F30E1D73DF400074EBE5 = {
 			isa = PBXGroup;
 			children = (
@@ -187,15 +221,13 @@
 				0B46DA371D73E376009064F0 /* Resource */,
 				0B29F31D1D73DF400074EBE5 /* AppDelegate.h */,
 				0B29F31E1D73DF400074EBE5 /* AppDelegate.m */,
-				0B29F3501D73E04C0074EBE5 /* ViewController.h */,
-				0B29F3511D73E04C0074EBE5 /* ViewController.m */,
-				0B29F3521D73E04C0074EBE5 /* ViewController.xib */,
 				0B29F3231D73DF400074EBE5 /* Main.storyboard */,
 				0B29F3261D73DF400074EBE5 /* Assets.xcassets */,
 				0B29F3281D73DF400074EBE5 /* LaunchScreen.storyboard */,
 				0B29F32B1D73DF400074EBE5 /* Info.plist */,
 				0B45E4061D76DBFD0030E5F0 /* 5-1.jpg */,
 				0B29F31A1D73DF400074EBE5 /* Supporting Files */,
+				0B3333561D7822E200665299 /* 蝉游记项目纪要.rtf */,
 			);
 			path = SSB_ChanYouJi;
 			sourceTree = "<group>";
@@ -231,8 +263,12 @@
 			children = (
 				0B45E3CA1D76B8490030E5F0 /* SSBBaseViewController.h */,
 				0B45E3CB1D76B8490030E5F0 /* SSBBaseViewController.m */,
+				0BF08E971D790FB200F563D6 /* SSBContainNavigationViewController.h */,
+				0BF08E981D790FB200F563D6 /* SSBContainNavigationViewController.m */,
 				0B45E3CC1D76B8490030E5F0 /* SSBTabBarController.h */,
 				0B45E3CD1D76B8490030E5F0 /* SSBTabBarController.m */,
+				0B33335A1D7824D700665299 /* SSBNavigationController.h */,
+				0B33335B1D7824D700665299 /* SSBNavigationController.m */,
 			);
 			path = CommonController;
 			sourceTree = "<group>";
@@ -290,6 +326,8 @@
 		0B46DA371D73E376009064F0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0B6A8C441D79573B00C6985F /* Images */,
+				0B3333581D78242000665299 /* 蝉游记项目纪要.docx */,
 				0BAB239F1D76FD6B00557E71 /* Images */,
 				0B46DA3F1D73E583009064F0 /* ChanYouJi_PrefixHeader.pch */,
 			);
@@ -299,6 +337,7 @@
 		0B46DA381D73E393009064F0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0BF08E901D78491600F563D6 /* BarButtonItem */,
 				0B46DA431D73E5BC009064F0 /* ViewModel */,
 				0B46DA421D73E5B3009064F0 /* Model */,
 				0B46DA411D73E5AA009064F0 /* View */,
@@ -341,7 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				0B45E4051D76BFC30030E5F0 /* ImageNamaDefine.h */,
-				0B77C2291D76E05B003C9262 /* Titiles.h */,
+				0B2DBDFF1D8EB506004594B3 /* ConstantValues.h */,
 			);
 			path = ChanYouJi_Macros;
 			sourceTree = "<group>";
@@ -349,6 +388,8 @@
 		0B46DA401D73E59D009064F0 /* Contoller */ = {
 			isa = PBXGroup;
 			children = (
+				0B01C1C61D7A706000F773EF /* Seach */,
+				0BF08E9A1D792C2400F563D6 /* Setting */,
 				0B45E3D71D76B9A10030E5F0 /* OffLine */,
 				0B45E3D61D76B98A0030E5F0 /* Mine */,
 				0B45E3D51D76B96B0030E5F0 /* ToolsBox */,
@@ -363,6 +404,8 @@
 		0B46DA411D73E5AA009064F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0BD7CDE11D8E3EE500DC3987 /* SSBSegementControll.h */,
+				0BD7CDE21D8E3EE500DC3987 /* SSBSegementControll.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,6 +466,13 @@
 			name = Protocol;
 			sourceTree = "<group>";
 		};
+		0B6A8C441D79573B00C6985F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		0BAB239F1D76FD6B00557E71 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +481,27 @@
 				0BAB239B1D76FD6600557E71 /* TabBarBackground@3x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		0BF08E901D78491600F563D6 /* BarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				0BF08E911D7849BA00F563D6 /* SSBBarButtonItem.h */,
+				0BF08E921D7849BA00F563D6 /* SSBBarButtonItem.m */,
+				0BF08E941D784B5100F563D6 /* SSBUIBarButtonItem.h */,
+				0BF08E951D784B5100F563D6 /* SSBUIBarButtonItem.m */,
+			);
+			path = BarButtonItem;
+			sourceTree = "<group>";
+		};
+		0BF08E9A1D792C2400F563D6 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0BF08E9B1D792C5C00F563D6 /* SSBSettingViewController.h */,
+				0BF08E9C1D792C5C00F563D6 /* SSBSettingViewController.m */,
+				0BF08E9D1D792C5C00F563D6 /* SSBSettingViewController.xib */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		4AA4620F2BD38B3024C2643B /* Frameworks */ = {
@@ -560,14 +631,17 @@
 				0BAB239C1D76FD6600557E71 /* TabBarBackground.png in Resources */,
 				0B29F32A1D73DF400074EBE5 /* LaunchScreen.storyboard in Resources */,
 				0B45E3F91D76BA230030E5F0 /* TravelStrategyViewController.xib in Resources */,
+				0B3333571D7822E200665299 /* 蝉游记项目纪要.rtf in Resources */,
 				0B45E3E71D76B9F60030E5F0 /* ToolBoxViewController.xib in Resources */,
+				0B3333591D78242000665299 /* 蝉游记项目纪要.docx in Resources */,
 				0B29F3271D73DF400074EBE5 /* Assets.xcassets in Resources */,
 				0B45E4071D76DBFD0030E5F0 /* 5-1.jpg in Resources */,
 				0B45E4021D76BA360030E5F0 /* OffLineViewController.xib in Resources */,
 				0BAB239D1D76FD6600557E71 /* TabBarBackground@2x.png in Resources */,
-				0B29F3541D73E04C0074EBE5 /* ViewController.xib in Resources */,
+				0BF08E9F1D792C5C00F563D6 /* SSBSettingViewController.xib in Resources */,
 				0B29F3251D73DF400074EBE5 /* Main.storyboard in Resources */,
 				0BAB239E1D76FD6600557E71 /* TabBarBackground@3x.png in Resources */,
+				0B01C1CB1D7A70A200F773EF /* SearchViewController.xib in Resources */,
 				0B45E3F01D76BA050030E5F0 /* YouJiViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,14 +727,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF08E9E1D792C5C00F563D6 /* SSBSettingViewController.m in Sources */,
 				0B45E3CE1D76B8490030E5F0 /* SSBBaseViewController.m in Sources */,
-				0B29F3531D73E04C0074EBE5 /* ViewController.m in Sources */,
 				0B45E3F61D76BA230030E5F0 /* TravelStrategyViewController.m in Sources */,
 				0B45E3D11D76B8490030E5F0 /* SSBTabBarController.m in Sources */,
+				0BF08E931D7849BA00F563D6 /* SSBBarButtonItem.m in Sources */,
 				0B45E3DB1D76B9E60030E5F0 /* MineViewController.m in Sources */,
+				0B33335C1D7824D700665299 /* SSBNavigationController.m in Sources */,
+				0B01C1CA1D7A70A200F773EF /* SearchViewController.m in Sources */,
 				0B29F31F1D73DF400074EBE5 /* AppDelegate.m in Sources */,
+				0BF08E961D784B5100F563D6 /* SSBUIBarButtonItem.m in Sources */,
+				0BF08E991D790FB200F563D6 /* SSBContainNavigationViewController.m in Sources */,
 				0B45E3FF1D76BA360030E5F0 /* OffLineViewController.m in Sources */,
 				0B45E3E41D76B9F60030E5F0 /* ToolBoxViewController.m in Sources */,
+				0BD7CDE31D8E3EE500DC3987 /* SSBSegementControll.m in Sources */,
 				0B29F31C1D73DF400074EBE5 /* main.m in Sources */,
 				0B45E3ED1D76BA050030E5F0 /* YouJiViewController.m in Sources */,
 			);

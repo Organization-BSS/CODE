@@ -6,8 +6,6 @@
 //  Copyright © 2016年 BSS. All rights reserved.
 //
 
-#import "SSBBaseViewController.h"
-
-@interface OffLineViewController : SSBBaseViewController
+@interface OffLineViewController : SSBContainNavigationViewController
 
 @end
