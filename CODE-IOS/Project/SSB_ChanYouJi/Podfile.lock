@@ -42,6 +42,7 @@ PODS:
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
   - TPKeyboardAvoiding (1.3)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - PPiAwesomeButton (~> 1.5.2)
   - SDWebImage (~> 3.8.1)
   - TPKeyboardAvoiding (~> 1.3)
+  - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -72,7 +74,8 @@ SPEC CHECKSUMS:
   PPiAwesomeButton: 16f7279582fd36f65186b24b83ef876217363eb5
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 9e0b7d6a87c417b6f674123a2761a2d81148ecdc
+PODFILE CHECKSUM: c3c47ae4a4c83c3565b9efaabb85814efe38e48e
 
 COCOAPODS: 1.0.1

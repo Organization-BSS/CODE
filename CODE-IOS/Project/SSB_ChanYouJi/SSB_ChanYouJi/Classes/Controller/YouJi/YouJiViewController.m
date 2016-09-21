@@ -7,8 +7,15 @@
 //
 
 #import "YouJiViewController.h"
+#import "ConstantValues.h"
+#import "TripsFeaturedViewModel.h"
+#import "SSBBarButtonItem.h"
+#import "SSBSegementControll.h"
+#import "SSBSettingViewController.h"
+#import "YouJiScrollView.h"
 
 @interface YouJiViewController ()
+@property (nonatomic,strong) TripsFeaturedViewModel* featureViewModel;
 
 @end
 
@@ -34,6 +41,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// 返回标题
 - (NSString *)viewController:(UIViewController *)viewController controllerTitile:(NSString *)str {
     
     return TITILE_NaivationBar_YouJi;
@@ -46,10 +54,14 @@
     self.view.backgroundColor = CYJCOLOR_BACKGROUND;
     [self addLeftAndRightBarItem];
 
-     
     SSBSegementControll *segmentControll = [[SSBSegementControll alloc]initWithFrame:CGRectMake(0, 0, kScreen_Width, 40) buttonTitiles:@[@"游记",@"专题"] selectedTitileColor:CYJCOLOR_SEGMENTWORDS buttonSelectedBlock:^(UIButton *button){
         NSLog(@"%@",button);
     } andSuperView:self.view];
+    
+   
+    YouJiScrollView *scroolView = [[YouJiScrollView alloc]initWithFrame:CGRectMake(0, segmentControll.frame.origin.y+segmentControll.frame.size.height,kScreen_Width , kScreen_Height-NAVBAR_H-TABBAR_H-segmentControll.mj_h)];
+    scroolView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:scroolView];
 }
 /*
 #pragma mark - Navigation

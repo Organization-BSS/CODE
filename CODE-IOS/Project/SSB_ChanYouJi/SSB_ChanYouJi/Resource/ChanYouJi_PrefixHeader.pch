@@ -46,11 +46,18 @@
 
 #pragma mark -
 #pragma mark Views
-
 #import "SSBSegementControll.h"
+#import "YouJiScrollView.h"
 
 #pragma mark -
 #pragma mark Vendors
 #import "MJRefresh/MJRefresh.h"
+#import "YYModel/YYModel.h"
+#import "UIColor+expanded.h"
+
+#pragma mark -
+#pragma mark --------ViewModels----------
+
+#import "TripsFeaturedViewModel.h"
 
 #endif /* ChanYouJi_PrefixHeader_pch */

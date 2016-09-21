@@ -6,49 +6,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SSB_ChanYouJi/Classes/Controller/YouJi/YouJiViewController.m"
-            timestampString = "495891108.954989"
+            filePath = "SSB_ChanYouJi/Classes/View/CommonView/CYJBaseView.m"
+            timestampString = "496144100.150491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "-addControlls"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[YouJiViewController addControlls]"
-                  moduleName = "SSB_ChanYouJi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bss/Desktop/SSB&apos;S%20Files/CODE/CODE-IOS/Project/SSB_ChanYouJi/SSB_ChanYouJi/Classes/Controller/YouJi/YouJiViewController.m"
-                  timestampString = "495885608.408053"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[YouJiViewController addControlls]_block_invoke"
-                  moduleName = "SSB_ChanYouJi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bss/Desktop/SSB&apos;S%20Files/CODE/CODE-IOS/Project/SSB_ChanYouJi/SSB_ChanYouJi/Classes/Controller/YouJi/YouJiViewController.m"
-                  timestampString = "495885608.408341"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "-willMoveToSuperview:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

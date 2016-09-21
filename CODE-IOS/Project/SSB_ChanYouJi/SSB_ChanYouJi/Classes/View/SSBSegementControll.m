@@ -8,7 +8,7 @@
 
 #import "SSBSegementControll.h"
 
-const NSInteger Number = 100;
+const NSInteger baseTagNumber = 100;
 @interface SSBSegementControll()
 
 //底部视图
@@ -61,7 +61,6 @@ const NSInteger Number = 100;
     vi.layer.cornerRadius = 5;
     vi.layer.borderWidth = 0.2;
     vi.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-
     [self addSubview:vi];
     
     _underTitileView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, perButtonWidth, height)];
@@ -77,7 +76,7 @@ const NSInteger Number = 100;
         UIButton *bu = [UIButton buttonWithType:UIButtonTypeCustom];
         CGRect buttonFrame = CGRectMake(i*perButtonWidth, 0, perButtonWidth, height);
         bu.frame = buttonFrame;
-        bu.tag = i + Number;
+        bu.tag = i + baseTagNumber;
         bu.layer.cornerRadius = self.layer.cornerRadius;
         [bu setTitle:_titiles[i] forState:UIControlStateNormal];
         [bu setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -87,15 +86,16 @@ const NSInteger Number = 100;
         bu.backgroundColor = [UIColor clearColor];
         [vi addSubview:bu];
     }
-    _currentButton = (UIButton * )[vi viewWithTag:Number];
+    _currentButton = (UIButton * )[vi viewWithTag:baseTagNumber];
     _currentButton.selected = YES;
 }
 
 // 用户点击按钮事件
 - (void)buttonSeleted:(UIButton *)button {
-    NSLog(@"%@",button);
-
+   // NSLog(@"%@",button);
     [self animateUnderView:button];
+    __weak typeof(button) weakself = button;
+    self.clickBlock(weakself);
 }
 
 // button底部的view根据用户的点击所产生的动画
@@ -110,6 +110,7 @@ const NSInteger Number = 100;
     [UIView animateWithDuration:0.2 animations:^{
         _underTitileView.frame = buttonRect;
     }];
+    
 }
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex {
