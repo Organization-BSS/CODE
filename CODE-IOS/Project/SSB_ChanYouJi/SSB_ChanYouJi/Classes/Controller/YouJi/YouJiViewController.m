@@ -8,14 +8,12 @@
 
 #import "YouJiViewController.h"
 #import "ConstantValues.h"
-#import "TripsFeaturedViewModel.h"
 #import "SSBBarButtonItem.h"
 #import "SSBSegementControll.h"
 #import "SSBSettingViewController.h"
 #import "YouJiScrollView.h"
 
 @interface YouJiViewController ()
-@property (nonatomic,strong) TripsFeaturedViewModel* featureViewModel;
 
 @end
 
@@ -23,10 +21,12 @@
 
 #pragma mark - lifecycle
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
 //    self.tabBarController.tabBar.hidden = NO;
+    [super viewDidAppear:animated];
 
 }
 - (void)viewDidLoad {

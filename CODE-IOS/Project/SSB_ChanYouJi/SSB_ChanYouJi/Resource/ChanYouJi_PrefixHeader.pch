@@ -20,6 +20,7 @@
 #import "SSB_MethodDefine.h"
 #import "SSB_ConstantValueDefine.h"
 #import "ConstantValues.h"
+#import "NetworkUrl.h"
 
 
 #pragma mark - Controllers
@@ -48,16 +49,28 @@
 #pragma mark Views
 #import "SSBSegementControll.h"
 #import "YouJiScrollView.h"
+#import "YouJiCell.h"
 
 #pragma mark -
 #pragma mark Vendors
 #import "MJRefresh/MJRefresh.h"
 #import "YYModel/YYModel.h"
 #import "UIColor+expanded.h"
+#import "AFNetworking/AFNetworking.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 
 #pragma mark -
 #pragma mark --------ViewModels----------
 
-#import "TripsFeaturedViewModel.h"
+#import "YouJiViewModel.h"
 
+
+#pragma mark -
+#pragma mark -------Models----------
+
+#import "YouJiModel.h"
+#pragma mark -
+#pragma mark -------Utils----------
+
+#import "SBHttpRequest.h"
 #endif /* ChanYouJi_PrefixHeader_pch */

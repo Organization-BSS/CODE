@@ -7,6 +7,7 @@
 //
 
 #import "SSBBaseModel.h"
+#import "UserModel.h"
 
 @interface YouJiModel : SSBBaseModel
 
@@ -23,6 +24,8 @@
 @property (nonatomic,strong)NSString *source;
 @property (nonatomic,strong)NSString *front_cover_photo_url;
 @property (nonatomic,strong)NSString *featured;
+
+@property (nonatomic,strong)UserModel *user;
 
 
 @end

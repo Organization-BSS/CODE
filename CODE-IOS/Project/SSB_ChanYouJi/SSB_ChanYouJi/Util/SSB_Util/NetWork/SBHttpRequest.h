@@ -53,9 +53,9 @@ typedef NS_ENUM(NSUInteger,HttpRequestType) {
 @interface SBHttpRequest : NSObject
 
 // 请求类的回话管理者
-@property (nonatomic,strong) AFHTTPSessionManager *sessionManager;
+@property (nonatomic,strong) AFHTTPSessionManager *sbSesstionManager;
 
-+ (instancetype)shareInstance;
++ (instancetype)getSharedInstance;
 
 /**
  *  发送get请求
@@ -65,7 +65,7 @@ typedef NS_ENUM(NSUInteger,HttpRequestType) {
  *  @param success    请求成功的回调
  *  @param failure    请求失败的回调
  */
-+ (SBURLSessionTask *)getWithURLString:(NSString *)URLString
+- (SBURLSessionTask *)getWithURLString:(NSString *)URLString
               parameters:(id)parameters
                  success:(void (^)(id responseObject))success
                  failure:(void (^)(NSError *error))failure;

@@ -11,9 +11,9 @@
 
 #define APPENDINGSTRING(X)
 
-const NSString *CYJBASEURL = @"https://chanyouji.com/api/";
+#define CYJBASEURL @"http://chanyouji.com/api/"
 
-static const NSString *CYJURL_TRIPS_Featured = [CYJBASEURL stringByAppendingString:@"trips/featured.json"];
+#define CYJURL_TRIPS_Featured [CYJBASEURL stringByAppendingString:@"trips/featured.json"]
 ;
 
 

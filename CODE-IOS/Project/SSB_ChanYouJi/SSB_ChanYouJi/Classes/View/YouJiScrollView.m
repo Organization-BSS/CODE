@@ -10,12 +10,10 @@
 #import "YouJiView.h"
 #import "SpecialTopicView.h"
 
-@interface YouJiScrollView() {
-    
-    YouJiView *youJiView;
-    SpecialTopicView *specialTopicView;
-    
-}
+@interface YouJiScrollView()
+
+@property (nonatomic,strong) YouJiView *youJiView;
+@property (nonatomic,strong) SpecialTopicView *specialTopicView;
 
 @end
 @implementation YouJiScrollView
@@ -27,6 +25,7 @@
     // Drawing code
 }
 */
+
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     
     self.pagingEnabled = YES;
@@ -37,14 +36,19 @@
 
 - (void)addControlls {
     
-    
-    youJiView = [YouJiView new];
-    youJiView.frame = CGRectMake(0, 0, self.mj_w, self.mj_h);
-    specialTopicView = [SpecialTopicView new];
-    specialTopicView.frame = CGRectMake(youJiView.mj_w, 0, self.mj_w, self.mj_h);
-    
-    [self addSubview:youJiView];
-    [self addSubview:specialTopicView];
+    _youJiView = [YouJiView new];
+    _youJiView.frame = CGRectMake(0, 0, self.mj_w, self.mj_h);
+    [self addSubview: _youJiView];
+}
+
+// lazyload
+- (SpecialTopicView *)getSpecialTopicView {
+    if (_specialTopicView == nil) {
+        _specialTopicView = [SpecialTopicView new];
+        _specialTopicView.frame = CGRectMake(_youJiView.mj_w, 0, self.mj_w, self.mj_h);
+        [self addSubview:_specialTopicView];
+    }
+    return _specialTopicView;
 }
 
 @end

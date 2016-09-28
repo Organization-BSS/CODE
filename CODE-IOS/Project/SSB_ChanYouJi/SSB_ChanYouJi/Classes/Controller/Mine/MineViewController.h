@@ -6,6 +6,7 @@
 //  Copyright © 2016年 BSS. All rights reserved.
 //
 
+#import "SSBContainNavigationViewController.h"
 
 @interface MineViewController : SSBContainNavigationViewController
 

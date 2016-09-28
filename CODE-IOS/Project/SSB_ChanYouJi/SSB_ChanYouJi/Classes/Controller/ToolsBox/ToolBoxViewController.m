@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = TITILE_NaivationBar_ToolsBox;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,4 +34,7 @@
 }
 */
 
+- (NSString *)viewController:(UIViewController *)viewController controllerTitile:(NSString *)str {
+    return TITILE_NaivationBar_ToolsBox;
+}
 @end

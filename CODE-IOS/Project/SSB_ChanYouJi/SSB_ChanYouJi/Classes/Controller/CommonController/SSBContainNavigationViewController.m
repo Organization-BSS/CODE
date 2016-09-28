@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self configureNavigationBar];
+    self.navigationItem.title = [self viewController:nil controllerTitile:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -37,4 +37,7 @@
 - (void)back:(UIBarButtonItem *)item {
      
 }
+- (NSString *)viewController:(UIViewController *)viewController controllerTitile:(NSString *)str {
+    return TITILE_NaivationBar_Setting;
+}
 @end

@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = TITILE_NaivationBar_TravelStrategy;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,5 +33,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (NSString *)viewController:(UIViewController *)viewController controllerTitile:(NSString *)str {
+    return TITILE_NaivationBar_TravelStrategy;
+}
 @end

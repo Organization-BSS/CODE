@@ -23,23 +23,33 @@
 
 @end
 
+@interface SBHttpRequest ()
+
+@end
+
 @implementation SBHttpRequest
+static SBHttpRequest *singleton = nil;
+
++ (void)load {
+//    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
 
 // 使用gcd获取网络请求的单例类
-+ (instancetype)shareInstance {
-    
-    static SBHttpRequest *singleton = nil;
++ (instancetype)getSharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         singleton = [[SBHttpRequest alloc] init];
     });
-    singleton.sessionManager = [self configureSessionManager];
-    [self configureOther];
+    singleton.sbSesstionManager = [[self class] configureSessionManager];
+    singleton.sbSesstionManager.securityPolicy.allowInvalidCertificates = YES;
+    [[self class] configureOther];
+    
     return singleton;
 }
 
 // 设置网络会话管理器
 + (AFHTTPSessionManager *)configureSessionManager {
+    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     /**
@@ -62,15 +72,15 @@
 
 // 设置其他相关的操作
 + (void)configureOther {
-    [UIApplication sharedApplication].networkActivityIndicatorVisible=true;
+    [UIApplication sharedApplication].networkActivityIndicatorVisible= YES;
 }
 #pragma mark -- GET请求 --
-+ (SBURLSessionTask *)getWithURLString:(NSString *)URLString
+- (SBURLSessionTask *)getWithURLString:(NSString *)URLString
               parameters:(id)parameters
                  success:(void (^)(id))success
                  failure:(void (^)(NSError *))failure {
-    AFHTTPSessionManager *manager = [self configureSessionManager];
-   return (SBURLSessionTask *)[manager GET:URLString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    
+   return (SBURLSessionTask *)[self.sbSesstionManager GET:URLString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
             success(responseObject);
         }

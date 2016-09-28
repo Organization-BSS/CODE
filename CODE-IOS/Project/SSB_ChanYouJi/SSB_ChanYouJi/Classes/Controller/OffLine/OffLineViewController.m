@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = TITILE_NaivationBar_OffLine;
 
 }
 
@@ -36,4 +35,7 @@
 }
 */
 
+- (NSString *)viewController:(UIViewController *)viewController controllerTitile:(NSString *)str {
+    return TITILE_NaivationBar_OffLine;
+}
 @end
