@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  SSCReminder
+//
+//  Created by bss on 16/10/8.
+//  Copyright © 2016年 BSS. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "RootViewController.h"
+#import "NetWork/SBHttpRequest.h"
+#import "ViewModel.h"
+#import "SortJudge.h"
+#import "SSCSetUp.h"
+#import "PlaySound.h"
+
+
+#endif /* PrefixHeader_pch */

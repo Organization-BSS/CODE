@@ -9,12 +9,13 @@
 #import "AnimationViewController.h"
 
 
-@interface AnimationViewController () {
+@interface AnimationViewController ()<CAAnimationDelegate> {
     UIBezierPath *path;
     CGPoint point;
     CGFloat number;
     CAShapeLayer *aboveLayer;
     UIView *lableView;
+    CALayer *layer ;
 }
 
 @end
@@ -27,7 +28,7 @@
     self.view.backgroundColor = [UIColor yellowColor];
     
     
-    [self performSelector:NSSelectorFromString(NSStringFromSelector(@selector(example03)))];
+    [self performSelector:NSSelectorFromString(NSStringFromSelector(@selector(example04)))];
 
     
    
@@ -117,20 +118,21 @@
 
 - (IBAction)done:(id)sender {
     
-    if (aboveLayer.strokeEnd>1 &&aboveLayer.strokeStart<1) {
-        aboveLayer.strokeStart += number;
-    } else if(aboveLayer.strokeStart==0) {
-        aboveLayer.strokeEnd +=number;
-    }
-    
-    if (aboveLayer.strokeEnd == aboveLayer.strokeStart) {
-        aboveLayer.strokeEnd = 0;
-    }
-    
-    if (aboveLayer.strokeEnd==0) {
-        aboveLayer.strokeStart = 0;
-    }
-    
+//    if (aboveLayer.strokeEnd>1 &&aboveLayer.strokeStart<1) {
+//        aboveLayer.strokeStart += number;
+//    } else if(aboveLayer.strokeStart==0) {
+//        aboveLayer.strokeEnd +=number;
+//    }
+//    
+//    if (aboveLayer.strokeEnd == aboveLayer.strokeStart) {
+//        aboveLayer.strokeEnd = 0;
+//    }
+//    
+//    if (aboveLayer.strokeEnd==0) {
+//        aboveLayer.strokeStart = 0;
+//    }
+    [self layerAnimation:layer];
+
 }
 
 #pragma mark -
@@ -162,6 +164,51 @@
     // set layer text
     textLayer.string = text;
     textLayer.contentsScale = [UIScreen mainScreen].scale;
+    
+}
+
+#pragma mark -
+#pragma mark 显式动画
+- (void)example04 {
+    
+    layer = [CALayer layer];
+    layer.frame = CGRectMake(100, 100, 100, 100);
+    layer.backgroundColor = [[UIColor blueColor]CGColor];
+    [self.view.layer addSublayer:layer];
+    
+    
+}
+
+- (UIColor *)randomColor {
+    
+    CGFloat red = arc4random() / (CGFloat)INT_MAX;
+    CGFloat green = arc4random() / (CGFloat)INT_MAX;
+    CGFloat blue = arc4random() / (CGFloat)INT_MAX;
+    UIColor *color = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+    return color;
+}
+
+
+// 给layer添加动画
+- (void)layerAnimation:(CALayer *)layer_ {
+    
+    CABasicAnimation * animation = [CABasicAnimation animation];
+    animation.keyPath = @"backgroundColor";
+    animation.duration = 5;
+    UIColor *color = [UIColor redColor];
+    animation.toValue = (__bridge id)color.CGColor;
+    animation.delegate = self;
+    [layer addAnimation:animation forKey:nil];
+
+}
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    NSLog(@"Animaton Stop");
+    CABasicAnimation *animtaion = (CABasicAnimation *)anim;
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    layer.backgroundColor = (__bridge CGColorRef)animtaion.toValue;
+    [CATransaction commit];
+    
     
 }
 @end
