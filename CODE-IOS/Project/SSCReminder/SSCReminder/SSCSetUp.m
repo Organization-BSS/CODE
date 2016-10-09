@@ -8,8 +8,13 @@
 
 #import "SSCSetUp.h"
 #import "AudioToolbox/AudioToolbox.h"
-// http://www.cp66607.com/api/xjssc?act=index&requestday=2016-10-08
-// http://m.1396mp.com/api/ssc/history?date=1435855200
+//xj http://www.cp66607.com/api/xjssc?act=index&requestday=2016-10-08
+//cq http://m.1396mp.com/api/ssc/history?date=1435855200
+
+/**
+ * api说明 模式如下：
+ http://www.cp66607.com/api/xjssc?act=index&limit=25500
+ */
 
 @interface SSCSetUp()
 @property (nonatomic,strong)NSMutableArray *datas;
