@@ -18,6 +18,7 @@
 #import "SortJudge.h"
 #import "SSCSetUp.h"
 #import "PlaySound.h"
+#import "AppDelegate.h"
 
 
 #endif /* PrefixHeader_pch */

@@ -22,6 +22,10 @@
     RootViewController *rvc = [[RootViewController alloc]init];
     _window.rootViewController = rvc;
     [_window makeKeyAndVisible];
+    
+//    _player = [[PlaySound alloc]initWithMusic:nil];
+    _player = [[PlaySound alloc]initSystemSoundWithName:nil SoundType:nil];
+
     return YES;
 }
 

@@ -10,6 +10,8 @@
 
 @interface RootViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *cqButton;
+@property (weak, nonatomic) IBOutlet UIButton *xjButton;
 @property (weak, nonatomic) IBOutlet UITextField *cqsscTextFiled;
+@property (weak, nonatomic) IBOutlet UITextField *xjTextField;
 
 @end

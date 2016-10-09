@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addGesture];
+  //  player = [[PlaySound alloc]initWithMusic:@"nil"];
+
     
     
     // Do any additional setup after loading the view from its nib.
@@ -29,15 +31,13 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)cqsscAction:(id)sender {
-//    SSCSetUp *sscSetUp = [[SSCSetUp alloc]init];
-//    sscSetUp.sscType = SSCTYPE_CQ;
-//    sscSetUp.reminderSize = [self.cqsscTextFiled.text integerValue];
-//    [sscSetUp setup];
+    SSCSetUp *sscSetUp = [[SSCSetUp alloc]init];
+    sscSetUp.sscType = SSCTYPE_CQ;
+    sscSetUp.reminderSize = [self.cqsscTextFiled.text integerValue];
+    [sscSetUp setup];
     
-//    PlaySound *player = [[PlaySound alloc]initSystemSoundWithName:nil SoundType:nil];
-    PlaySound *player = [[PlaySound alloc]initWithMusic:nil];
-    [player play];
 }
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }
@@ -50,18 +50,26 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 - (void)addGesture {
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hideView:)];
     [self.view addGestureRecognizer:tap];
 }
 
+// 隐藏子视图
 - (void)hideView:(id)object {
     for (UIView *v in self.view.subviews) {
         v.hidden = !v.hidden;
     }
 //    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-    PlaySound *player = [[PlaySound alloc]initSystemShake];
-    [player play];
 
+}
+
+- (IBAction)xjsscAction:(id)sender {
+    
+    SSCSetUp *sscSetUp = [[SSCSetUp alloc]init];
+    sscSetUp.sscType = SSCTYPE_XJ;
+    sscSetUp.reminderSize = [self.xjTextField.text integerValue];
+    [sscSetUp setup];
 }
 @end

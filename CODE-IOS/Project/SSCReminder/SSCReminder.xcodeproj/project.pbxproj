@@ -18,6 +18,7 @@
 		0B483DD91DA8EF2B004F4DCF /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B483DD71DA8EF2B004F4DCF /* 1.mp3 */; };
 		0B483DDA1DA8EF2B004F4DCF /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B483DD81DA8EF2B004F4DCF /* 2.mp3 */; };
 		0B483DDC1DA8F024004F4DCF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B483DDB1DA8F024004F4DCF /* AVFoundation.framework */; };
+		0B483DDF1DA9F1BF004F4DCF /* XJSSCSetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B483DDE1DA9F1BF004F4DCF /* XJSSCSetUp.m */; };
 		0B75675D1DA887900013E9FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75675C1DA887900013E9FE /* main.m */; };
 		0B7567601DA887900013E9FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75675F1DA887900013E9FE /* AppDelegate.m */; };
 		0B7567631DA887900013E9FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7567621DA887900013E9FE /* ViewController.m */; };
@@ -65,6 +66,8 @@
 		0B483DD71DA8EF2B004F4DCF /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
 		0B483DD81DA8EF2B004F4DCF /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
 		0B483DDB1DA8F024004F4DCF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0B483DDD1DA9F1BF004F4DCF /* XJSSCSetUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJSSCSetUp.h; sourceTree = "<group>"; };
+		0B483DDE1DA9F1BF004F4DCF /* XJSSCSetUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJSSCSetUp.m; sourceTree = "<group>"; };
 		0B7567581DA887900013E9FE /* SSCReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSCReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B75675C1DA887900013E9FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B75675E1DA887900013E9FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,13 +122,14 @@
 			children = (
 				0B483DD31DA8EBBA004F4DCF /* Modules */,
 				0B483DCD1DA8BFEF004F4DCF /* utils */,
-				0B483DCC1DA8A381004F4DCF /* Models */,
 				0B483DB91DA89132004F4DCF /* NetWork */,
 				0B483DB11DA88EB7004F4DCF /* RootViewController.h */,
 				0B483DB21DA88EB7004F4DCF /* RootViewController.m */,
 				0B483DB31DA88EB7004F4DCF /* RootViewController.xib */,
 				0B483DC31DA8940F004F4DCF /* SSCSetUp.h */,
 				0B483DC41DA8940F004F4DCF /* SSCSetUp.m */,
+				0B483DDD1DA9F1BF004F4DCF /* XJSSCSetUp.h */,
+				0B483DDE1DA9F1BF004F4DCF /* XJSSCSetUp.m */,
 				0B483DC01DA8934A004F4DCF /* SSCRequest.h */,
 				0B483DC11DA8934A004F4DCF /* SSCRequest.m */,
 			);
@@ -139,13 +143,6 @@
 				0B483DBB1DA89132004F4DCF /* SBHttpRequest.m */,
 			);
 			path = NetWork;
-			sourceTree = "<group>";
-		};
-		0B483DCC1DA8A381004F4DCF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		0B483DCD1DA8BFEF004F4DCF /* utils */ = {
@@ -448,6 +445,7 @@
 				0B483DD61DA8EBE5004F4DCF /* PlaySound.m in Sources */,
 				0B483DBC1DA89132004F4DCF /* SBHttpRequest.m in Sources */,
 				0B483DB41DA88EB7004F4DCF /* RootViewController.m in Sources */,
+				0B483DDF1DA9F1BF004F4DCF /* XJSSCSetUp.m in Sources */,
 				0B483DC51DA8940F004F4DCF /* SSCSetUp.m in Sources */,
 				0B75675D1DA887900013E9FE /* main.m in Sources */,
 			);

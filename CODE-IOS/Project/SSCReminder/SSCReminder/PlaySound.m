@@ -110,10 +110,13 @@
     self = [super init];
     if (self) {
         NSString *filepath = [[NSBundle mainBundle]pathForResource:@"1" ofType:@"mp3"];
-        NSData *data = [[NSData alloc]initWithContentsOfFile:filepath];
+        //        NSData *data = [[NSData alloc]initWithContentsOfFile:filepath];
+        NSURL *url = [NSURL fileURLWithPath:filepath];
         
-        self.player = [[AVAudioPlayer alloc]initWithData:data error:nil];
-//        [self.player prepareToPlay];
+        player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
+        
+        player.volume = 1.0;
+        [player prepareToPlay];
     
     }
     return self;
@@ -122,8 +125,9 @@
 
 - (void)play
 {
-    if (self.player) {
-        [self.player play];
+  
+    if (player) {
+        [player play];
     } else
 
         AudioServicesPlaySystemSound(sound);
