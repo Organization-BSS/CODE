@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  SSCDataManager
+//
+//  Created by bss on 16/10/10.
+//  Copyright © 2016年 BSS. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#pragma mark - Protocols
+#import "DataBaseProtocol.h"
+
+#pragma mark - Classes
+#import "SSCDataBaseHandler.h"
+#import "SearchData.h"
+#import "NetWork/SBHttpRequest.h"
+#import "DataCenter.h"
+
+
+#pragma mark - ThirdPart
+
+#import "fmdb/FMDB.h"
+
+
+#endif /* PrefixHeader_pch */

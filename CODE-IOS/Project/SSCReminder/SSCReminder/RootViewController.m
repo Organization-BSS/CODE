@@ -15,6 +15,17 @@
 @end
 
 @implementation RootViewController
+- (IBAction)changeMusic:(id)sender {
+    UIButton *bu = (UIButton *)sender;
+    bu.selected = !bu.selected;
+    AppDelegate * delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    if (bu.selected) {
+        delegate.player = [[PlaySound alloc]initWithMusic:nil];
+    } else {
+        delegate.player = [[PlaySound alloc]initSystemSoundWithName:nil SoundType:nil];
+
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

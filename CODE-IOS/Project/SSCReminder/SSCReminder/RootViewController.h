@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIButton *cqButton;
 @property (weak, nonatomic) IBOutlet UIButton *xjButton;
 @property (weak, nonatomic) IBOutlet UITextField *cqsscTextFiled;

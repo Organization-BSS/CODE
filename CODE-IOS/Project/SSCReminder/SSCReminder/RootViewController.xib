@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,7 +44,6 @@
                     <color key="backgroundColor" red="0.1817695517" green="1" blue="0.71311067839999998" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="xj"/>
                     <connections>
-                        <action selector="cqsscAction:" destination="-1" eventType="touchUpInside" id="yo7-OF-97I"/>
                         <action selector="xjsscAction:" destination="-1" eventType="touchUpInside" id="FwC-gR-U6K"/>
                     </connections>
                 </button>
@@ -59,9 +57,17 @@
                         <outlet property="delegate" destination="-1" id="FqC-fv-4FC"/>
                     </connections>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTR-yJ-tDW">
+                    <frame key="frameInset" minX="43" minY="82" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="音乐"/>
+                    <connections>
+                        <action selector="changeMusic:" destination="-1" eventType="touchUpInside" id="cjb-F6-wuf"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="-347" y="-13"/>
+            <point key="canvasLocation" x="-556" y="-58"/>
         </view>
     </objects>
 </document>

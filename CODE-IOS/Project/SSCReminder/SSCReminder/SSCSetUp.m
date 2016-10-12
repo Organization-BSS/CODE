@@ -14,6 +14,7 @@
 /**
  * api说明 模式如下：
  http://www.cp66607.com/api/xjssc?act=index&limit=25500
+ http://www.cp66607.com/api/cqssc?act=lishikaijianghaoma&limit=20
  */
 
 @interface SSCSetUp()
@@ -59,7 +60,7 @@
     if (self.sscType==SSCTYPE_CQ) {
         url = [self cxSSCUrl];
         
-    } else {
+    } if (self.sscType==SSCTYPE_XJ)  {
         url = [self xjSSCUrl];
     }
 
@@ -86,7 +87,7 @@
             
         }
         //xj
-        else {
+        if (self.sscType==SSCTYPE_XJ) {
           /* 数据如此类
            [
            {
@@ -197,6 +198,7 @@
 - (void)alertUser {
     AppDelegate * delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     [delegate.player play];
+    NSLog(@"提醒用户");
     
 }
 
