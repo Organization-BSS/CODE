@@ -36,6 +36,10 @@
     SSCDataBaseHandler *handler = [[SSCDataBaseHandler alloc]init];
     [handler searDataFromDataBase:[self.consecutiveNumberTextField.text integerValue]];
 }
+- (IBAction)presentCaculateView:(id)sender {
+    MoneyCaculateViewController *moneyVC = [[MoneyCaculateViewController alloc]init];
+    [self presentViewController:moneyVC animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

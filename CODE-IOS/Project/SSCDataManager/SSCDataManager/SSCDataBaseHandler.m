@@ -148,13 +148,12 @@
     
     NSString *docsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
     NSLog(@"database path is :%@",docsPath);
-    
-    NSString *dbPath = [docsPath stringByAppendingPathComponent:@"cqccs.db"];
     [self.dataBaseQueue inDatabase:^(FMDatabase *db) {
         if ([db open]) {
             [self createTable:db tableName:nil];
         }
     }];
+    
 }
 
 #pragma mark - 打开数据库
@@ -165,7 +164,6 @@
     NSString *dbPath   = [docsPath stringByAppendingPathComponent:@"cqccs.db"];
     
     self.dataBaseQueue = [FMDatabaseQueue databaseQueueWithPath:dbPath];
-    
     
     _db = [FMDatabase databaseWithPath:dbPath];
     if (_db) {
@@ -197,12 +195,13 @@
 }
     return 0;
 }
+
 #pragma mark 查询所有数据
 - (NSArray *)getAllData {
+    
     [[DataCenter sharedDataCenter]setTotalNubmers:[[self numbersOfTable:@"cqssc"] integerValue]];
     ;
-    
-    NSString *sql = @"select *from cqssc";
+    NSString *sql = @"select *from cqssc order by id desc";
     FMResultSet *result = [self.db executeQuery:sql];
     NSLog(@"%@",result);
     NSMutableArray * resultArray = [[NSMutableArray alloc]initWithCapacity:10];
@@ -212,18 +211,18 @@
     }
     return resultArray;
 }
+
 - (NSInteger)countOftable:(NSString *)tableName {
     
     int64_t totalNumber = [self.db lastInsertRowId];
     return totalNumber;
 }
+
 // 查询数据
 - (void)searDataFromDataBase:(NSInteger)numbers {
 
     [self openDataBase];
     SearchData *searchData = [[SearchData alloc]init];
-    
-//    [[DataCenter sharedDataCenter]setNubmers:
     [[DataCenter sharedDataCenter]setNumber:[NSNumber numberWithInteger:[searchData searchData:[self getAllData] consecutiveNumber:numbers]]];
 }
 

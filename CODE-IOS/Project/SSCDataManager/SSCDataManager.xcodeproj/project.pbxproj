@@ -15,6 +15,8 @@
 		0B483DFC1DAB32B1004F4DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B483DFA1DAB32B1004F4DCF /* LaunchScreen.storyboard */; };
 		0B483E071DAB32B1004F4DCF /* SSCDataManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B483E061DAB32B1004F4DCF /* SSCDataManagerTests.m */; };
 		0B483E121DAB32B1004F4DCF /* SSCDataManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B483E111DAB32B1004F4DCF /* SSCDataManagerUITests.m */; };
+		0B6519FE1DAF1FBB0078AA59 /* MoneyCaculateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6519FC1DAF1FBB0078AA59 /* MoneyCaculateViewController.m */; };
+		0B6519FF1DAF1FBB0078AA59 /* MoneyCaculateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B6519FD1DAF1FBB0078AA59 /* MoneyCaculateViewController.xib */; };
 		0BD41B491DAB3909000A23F2 /* SSCDataBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD41B481DAB3909000A23F2 /* SSCDataBaseHandler.m */; };
 		0BD41B531DAB6AB3000A23F2 /* cqssc－25500.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0BD41B521DAB6AB3000A23F2 /* cqssc－25500.txt */; };
 		0BD41B571DAB84FA000A23F2 /* xjssc－25500.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0BD41B561DAB84FA000A23F2 /* xjssc－25500.rtf */; };
@@ -59,6 +61,9 @@
 		0B483E0D1DAB32B1004F4DCF /* SSCDataManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSCDataManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B483E111DAB32B1004F4DCF /* SSCDataManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCDataManagerUITests.m; sourceTree = "<group>"; };
 		0B483E131DAB32B1004F4DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B6519FB1DAF1FBB0078AA59 /* MoneyCaculateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyCaculateViewController.h; sourceTree = "<group>"; };
+		0B6519FC1DAF1FBB0078AA59 /* MoneyCaculateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyCaculateViewController.m; sourceTree = "<group>"; };
+		0B6519FD1DAF1FBB0078AA59 /* MoneyCaculateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyCaculateViewController.xib; sourceTree = "<group>"; };
 		0BD41B431DAB3552000A23F2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0BD41B451DAB3736000A23F2 /* DataBaseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseProtocol.h; sourceTree = "<group>"; };
 		0BD41B471DAB3909000A23F2 /* SSCDataBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCDataBaseHandler.h; sourceTree = "<group>"; };
@@ -171,9 +176,20 @@
 			path = SSCDataManagerUITests;
 			sourceTree = "<group>";
 		};
+		0B6519FA1DAF1ECE0078AA59 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B6519FB1DAF1FBB0078AA59 /* MoneyCaculateViewController.h */,
+				0B6519FC1DAF1FBB0078AA59 /* MoneyCaculateViewController.m */,
+				0B6519FD1DAF1FBB0078AA59 /* MoneyCaculateViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		0BD41B441DAB3703000A23F2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0B6519FA1DAF1ECE0078AA59 /* Controller */,
 				0BD41B621DADD3E1000A23F2 /* Util */,
 				0BD41B5E1DADCEC3000A23F2 /* NetWork */,
 				0BD41B4B1DAB3A90000A23F2 /* Protocol */,
@@ -358,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B483DFC1DAB32B1004F4DCF /* LaunchScreen.storyboard in Resources */,
+				0B6519FF1DAF1FBB0078AA59 /* MoneyCaculateViewController.xib in Resources */,
 				0B483DF91DAB32B1004F4DCF /* Assets.xcassets in Resources */,
 				0BD41B571DAB84FA000A23F2 /* xjssc－25500.rtf in Resources */,
 				0B483DF71DAB32B1004F4DCF /* Main.storyboard in Resources */,
@@ -442,6 +459,7 @@
 				0BD41B611DADCEC3000A23F2 /* SBHttpRequest.m in Sources */,
 				0BD41B5A1DAC748D000A23F2 /* SSCDataModel.m in Sources */,
 				0BD41B491DAB3909000A23F2 /* SSCDataBaseHandler.m in Sources */,
+				0B6519FE1DAF1FBB0078AA59 /* MoneyCaculateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
