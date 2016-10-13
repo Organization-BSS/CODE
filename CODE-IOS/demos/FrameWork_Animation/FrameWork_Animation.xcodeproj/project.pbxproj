@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B651A031DAF61090078AA59 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B651A011DAF61090078AA59 /* RootViewController.m */; };
+		0B651A041DAF61090078AA59 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B651A021DAF61090078AA59 /* RootViewController.xib */; };
 		0BD58BC31D8F858500FA1A20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD58BC21D8F858500FA1A20 /* main.m */; };
 		0BD58BC61D8F858500FA1A20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD58BC51D8F858500FA1A20 /* AppDelegate.m */; };
 		0BD58BC91D8F858500FA1A20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD58BC81D8F858500FA1A20 /* ViewController.m */; };
@@ -17,7 +19,7 @@
 		0BD58BE71D8F858500FA1A20 /* FrameWork_AnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD58BE61D8F858500FA1A20 /* FrameWork_AnimationUITests.m */; };
 		0BD58BF81D8F868000FA1A20 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD58BF61D8F868000FA1A20 /* AnimationViewController.m */; };
 		0BD58BF91D8F868000FA1A20 /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD58BF71D8F868000FA1A20 /* AnimationViewController.xib */; };
-		0BD58BFB1D8F909D00FA1A20 /* AnimationNote.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0BD58BFA1D8F909D00FA1A20 /* AnimationNote.rtf */; };
+		0BD58BFB1D8F909D00FA1A20 /* AnimationNote.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 0BD58BFA1D8F909D00FA1A20 /* AnimationNote.rtfd */; };
 		0BD58BFE1D8F910900FA1A20 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD58BFD1D8F910900FA1A20 /* Note.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B651A001DAF61090078AA59 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0B651A011DAF61090078AA59 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		0B651A021DAF61090078AA59 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		0BD58BBE1D8F858500FA1A20 /* FrameWork_Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameWork_Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD58BC21D8F858500FA1A20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0BD58BC41D8F858500FA1A20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,7 +63,7 @@
 		0BD58BF51D8F868000FA1A20 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		0BD58BF61D8F868000FA1A20 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		0BD58BF71D8F868000FA1A20 /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
-		0BD58BFA1D8F909D00FA1A20 /* AnimationNote.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = AnimationNote.rtf; sourceTree = "<group>"; };
+		0BD58BFA1D8F909D00FA1A20 /* AnimationNote.rtfd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.rtfd; path = AnimationNote.rtfd; sourceTree = "<group>"; };
 		0BD58BFC1D8F910900FA1A20 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		0BD58BFD1D8F910900FA1A20 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,7 +164,10 @@
 				0BD58BF51D8F868000FA1A20 /* AnimationViewController.h */,
 				0BD58BF61D8F868000FA1A20 /* AnimationViewController.m */,
 				0BD58BF71D8F868000FA1A20 /* AnimationViewController.xib */,
-				0BD58BFA1D8F909D00FA1A20 /* AnimationNote.rtf */,
+				0BD58BFA1D8F909D00FA1A20 /* AnimationNote.rtfd */,
+				0B651A001DAF61090078AA59 /* RootViewController.h */,
+				0B651A011DAF61090078AA59 /* RootViewController.m */,
+				0B651A021DAF61090078AA59 /* RootViewController.xib */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -271,8 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD58BFB1D8F909D00FA1A20 /* AnimationNote.rtf in Resources */,
+				0BD58BFB1D8F909D00FA1A20 /* AnimationNote.rtfd in Resources */,
 				0BD58BD11D8F858500FA1A20 /* LaunchScreen.storyboard in Resources */,
+				0B651A041DAF61090078AA59 /* RootViewController.xib in Resources */,
 				0BD58BCE1D8F858500FA1A20 /* Assets.xcassets in Resources */,
 				0BD58BCC1D8F858500FA1A20 /* Main.storyboard in Resources */,
 				0BD58BF91D8F868000FA1A20 /* AnimationViewController.xib in Resources */,
@@ -302,6 +311,7 @@
 			files = (
 				0BD58BFE1D8F910900FA1A20 /* Note.m in Sources */,
 				0BD58BC91D8F858500FA1A20 /* ViewController.m in Sources */,
+				0B651A031DAF61090078AA59 /* RootViewController.m in Sources */,
 				0BD58BC61D8F858500FA1A20 /* AppDelegate.m in Sources */,
 				0BD58BC31D8F858500FA1A20 /* main.m in Sources */,
 				0BD58BF81D8F868000FA1A20 /* AnimationViewController.m in Sources */,
@@ -538,6 +548,7 @@
 				0BD58BED1D8F858500FA1A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BD58BEE1D8F858500FA1A20 /* Build configuration list for PBXNativeTarget "FrameWork_AnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +557,7 @@
 				0BD58BF01D8F858500FA1A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BD58BF11D8F858500FA1A20 /* Build configuration list for PBXNativeTarget "FrameWork_AnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +566,7 @@
 				0BD58BF31D8F858500FA1A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

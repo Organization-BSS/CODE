@@ -131,7 +131,12 @@
 //    if (aboveLayer.strokeEnd==0) {
 //        aboveLayer.strokeStart = 0;
 //    }
-    [self layerAnimation:layer];
+//    [self layerAnimation:layer];
+//    [self animateLayerSize:layer];
+//    [self moveAnimation:layer];
+//    [self rotate:layer];
+    [self keyframeAnimation:layer];
+
 
 }
 
@@ -167,8 +172,7 @@
     
 }
 
-#pragma mark -
-#pragma mark 显式动画
+#pragma mark - 显式动画
 - (void)example04 {
     
     layer = [CALayer layer];
@@ -176,6 +180,26 @@
     layer.backgroundColor = [[UIColor blueColor]CGColor];
     [self.view.layer addSublayer:layer];
     
+    
+}
+#pragma mark - CAKeyframeAniation 关键帧动画
+- (void)keyframeAnimation:(CALayer *)_layer {
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+    animation.keyPath = @"position";
+    animation.duration = 4;
+    animation.path = [self pathByBezier];
+    animation.removedOnCompletion = NO; //
+    animation.fillMode = kCAFillModeForwards;
+    [_layer addAnimation:animation forKey:@"keyFrame"];
+}
+
+// 组动画
+
+#pragma mark － 通过贝塞尔曲线生成路径
+- (CGPathRef)pathByBezier {
+    
+    UIBezierPath *pa = [UIBezierPath bezierPathWithRect:CGRectMake(50, 50, 100, 100)];
+     return pa.CGPath;
     
 }
 
@@ -201,13 +225,55 @@
     [layer addAnimation:animation forKey:nil];
 
 }
+
+// 修改大小 
+- (void)animateLayerSize:(CALayer *)_layer {
+    
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"bounds";
+    animation.duration = 3;
+    
+    CGRect rect = CGRectMake(0, 0, 50, 50);
+    NSValue *value = [NSValue valueWithCGRect:rect];
+    animation.toValue = value;
+    animation.delegate = self;
+    [_layer addAnimation:animation forKey:@"size"];
+}
+
+// 旋转
+- (void)rotate:(CALayer *)_layer {
+    
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"transform.rotation.x";
+    
+    animation.duration = 3;
+    animation.toValue = @(M_PI);
+    animation.delegate = self;
+    [_layer addAnimation:animation forKey:@"ratation"];
+}
+
+//  平移动动作
+- (void)moveAnimation:(CALayer *)_layer {
+    
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"position";
+    animation.duration = 3;
+    
+    CGPoint _point = CGPointMake(100, 100);
+    NSValue *value = [NSValue valueWithCGPoint:_point];
+    animation.toValue = value;
+    animation.delegate = self;
+    [_layer addAnimation:animation forKey:@"point"];
+    
+}
+
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     NSLog(@"Animaton Stop");
-    CABasicAnimation *animtaion = (CABasicAnimation *)anim;
-    [CATransaction begin];
-    [CATransaction setDisableActions:YES];
-    layer.backgroundColor = (__bridge CGColorRef)animtaion.toValue;
-    [CATransaction commit];
+//    CABasicAnimation *animtaion = (CABasicAnimation *)anim;
+//    [CATransaction begin];
+//    [CATransaction setDisableActions:YES];
+//    layer.backgroundColor = (__bridge CGColorRef)animtaion.toValue;
+//    [CATransaction commit];
     
     
 }
