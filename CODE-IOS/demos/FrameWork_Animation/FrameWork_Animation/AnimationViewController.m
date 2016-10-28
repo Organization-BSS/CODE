@@ -7,7 +7,21 @@
 //
 
 #import "AnimationViewController.h"
+@interface SubLayer:CALayer
+@end
 
+@implementation SubLayer
+
+- (instancetype)initWithLayer:(CALayer *)layer {
+    self = [super initWithLayer:layer];
+    if (self) {
+        self.backgroundColor = layer.backgroundColor;
+        self.bounds = layer.bounds;
+    }
+    return self;
+}
+
+@end
 
 @interface AnimationViewController ()<CAAnimationDelegate> {
     UIBezierPath *path;
@@ -135,7 +149,13 @@
 //    [self animateLayerSize:layer];
 //    [self moveAnimation:layer];
 //    [self rotate:layer];
-    [self keyframeAnimation:layer];
+//    [self keyframeAnimation:layer];
+    SubLayer *newLayer = [[SubLayer alloc]initWithLayer:layer];
+//    newLayer.frame = CGRectMake(100, 200, 200, 200);
+//    newLayer.backgroundColor = [[UIColor redColor]CGColor];
+    
+    [self.view.layer addSublayer:newLayer];
+    CALayer *presentLayer = [newLayer presentationLayer];
 
 
 }
@@ -143,6 +163,7 @@
 #pragma mark -
 #pragma mark CATEXTLAYER
 - (void)example03 {
+    
     lableView = [[UIView alloc]initWithFrame:CGRectMake(50, 50, 100, 200)];
     lableView.backgroundColor = [UIColor redColor];
     [self.view addSubview:lableView];
@@ -193,7 +214,8 @@
     [_layer addAnimation:animation forKey:@"keyFrame"];
 }
 
-// 组动画
+#pragma mark test CALayer property or method
+
 
 #pragma mark － 通过贝塞尔曲线生成路径
 - (CGPathRef)pathByBezier {

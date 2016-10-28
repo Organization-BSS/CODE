@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北京泛博化学股份有限公司</title>
+    <style>
+        body {
+            margin:0px;
+            padding:0px;
+        }
+        li {
+            float: left;
+        }
+
+        .on {
+            text-decoration: none;
+            width: 100px;
+            margin-left: 20px;
+            margin-bottom: 5px;
+            padding: 10px;;
+            color: black;
+        }
+        a.on:hover {
+            background-color: red;
+            color: white;
+            border-radius: 4px;
+        }
+        a:hover {
+            color: #ff6c00;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .top.wrap{
+            background-color: #0753a3;
+        }
+        .top {
+            width: 100%;
+            height: 30px;
+            background-color: #0753a3;
+            margin:0;
+            padding: 0;
+        }
+
+        .i_header {
+            width:100%;
+            height: 534px;
+            position: relative;
+        }
+
+        .content {
+            padding-top: 30px;
+            width:100%;
+            backgroud-color: #1f4164;
+        }
+        .footer {
+            width:100%;
+            height:165px;
+            background-color: #00a9e7;
+            margin-bottom: 0px;
+            margin-left: 0;
+            margin-right: 0px;
+            margin-top: 30px;
+            background: url("images/fot_bg.gif");
+
+        }
+        .banner {
+            width: 1200px;;
+            height:534px;
+            background-color: yellow;
+            overflow: hidden;
+            margin:0 auto;
+        }
+        .navigation {
+            width: 1200px;;
+            height: 44px;
+            z-index: 13;
+            margin: 0 auto;
+            position: absolute;
+            top:0px;
+            left: 0px;
+
+
+        }
+        .banner_pic {
+            width:100%;
+            height: 534px;
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+        }
+
+        .con {
+            height: 350px;
+            width:100%;
+        }
+        .con2_menu {
+            height:226px ;
+            width: 226px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 5px;
+            border: 1px solid #ddd;;
+
+        }
+        .con2_menu:hover {
+            border-color: red;
+        }
+        .ip_ad {
+            width: 200px;
+            height: 200px;
+            position:relative;
+            top:13px;
+            padding: auto;
+            margin:auto;
+        }
+        .icon {
+            display: block;
+            width:100%;
+            height:128px;
+            text-align: center;
+        }
+        .tit {
+            display: block;
+            color: red;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .text {
+            font-size: 12px;
+            color: black;
+            padding: 2px;;
+        }
+
+        .i_news {
+            float: right;
+            width:420px;
+        }
+
+        .news_ul {
+            height:210px;
+            margin: 5px;;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .i_news li {
+
+            margin: 5px;
+            height: 90px;
+            width:100%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .i_news li a {
+            width:100%;
+            height: 20px;
+            line-height: 1.2em;
+            font-size: 13px;
+        }
+
+
+        .i_news li p {
+            padding-right: 10px;
+            width:100%;
+            font-size: 10px;
+            display: block;
+            color: #888;
+        }
+        .i_news li span {
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 3px;
+            /*color: red;*/
+        }
+        a.more:hover {
+            background-color: red;
+
+        }
+        .moreContent:hover {
+            background-color: blue;
+            color: white;
+        }
+        .moreContent {
+            margin:0 auto;
+            display: block;
+            background-color: red;
+            border-radius: 5px;
+            line-height: 44px;;
+            width: 152px;
+            height:100%;
+            text-align: center;
+            color: white;
+
+        }
+        #con5 {
+            width:100%;
+            height: 350px;;
+        }
+       .wrap {
+            width: 1200px;
+            height:100%;
+            margin: 0 auto;
+        }
+         .quick_menu {
+            width:100%;
+             height:100%;
+            margin:0;
+            padding: 0;
+        }
+        .menuone {
+            height: 100%;
+            width: 285px;
+            float: left;
+            margin-right: 20px;
+            background-color: white;
+            display: inline-block;
+            position: relative;
+            border-bottom: 1px solid #7d7d7d;
+        }
+        .pic {
+            height:185px;
+            width:100%;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .blankDiv {
+            height: 15px;
+            width:100%;
+            padding:0;
+            margin:0;
+
+        }
+
+        h2.menuone_h2 {
+            margin-top: 0px;
+            height:30px;
+            width:100%;
+            display: block;
+
+        }
+        .menuone h2 a {
+            margin-top: 0px;
+            font-size: 18px;
+            font-weight:bold;
+            color: #222;
+            line-height: 1em;
+            text-decoration: none;
+        }
+
+        .text_pad {
+
+            font-size: 12px;
+            line-height: 1.5em;
+            color: #777;
+            padding-left: 20px;
+            background: url("images/sj.gif") 0 4px no-repeat;
+            background-color: #fffff7;
+
+        }
+
+        .wraper {
+            width: 1100px;
+            height:100%;
+            margin:0 auto;
+            position: relative;
+        }
+
+        .f_pad {
+            width: 100%;
+            height:100%;
+        }
+        .f_left {
+            width:80%;
+            height:100%;
+            float: left;
+            margin: 0px;
+        }
+        .f_code {
+            width:20%;
+            height:100%;
+            float: right;
+            position: relative;
+        }
+        .f_left_fit {
+            font-size: 20px;
+            font-weight: bold;
+            color: #99b6d4;
+            height: 30px;
+        }
+        .f_left_he span {
+            color: white;
+            font-size: 17px;
+            font-weight:bold;
+            height:30px;
+        }
+        .f_left_add  {
+            height: 30px;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="top">
+    <div class="wrap">
+
+        <div class="fl" style="float: left;color: white;line-height: 30px">欢迎来到北京樊博清洁技术研究院邮箱公司官方网站!</div>
+        <div class="r_icon"style="float: right; width: 145px ;height: 30px; background: url(images/wb.gif) no-repeat;">
+            <span class="sina" style="color:#99b6d4;width: 70px;display: block;float: left;">
+                <a href="#" style="color: white;display: block;float: left;padding-left: 25px;margin-top: 5px">微博</a></span>
+            <span class="sina" style="color:#99b6d4;width: 70px;display: block;float: right;">
+                <a href="#" style="color: white;display: block;float: right;padding-left: 25px;margin-top: 5px">微信</a></span>
+        </div>
+        </div>
+</div>
+<div class="i_header" style="clear: both">
+    <div class="i_header_wrap" style="width: 1200px ;height: 100%; margin: 0 auto;position: relative;">
+    <div class="banner">
+        <ul class="banner_pic">
+            <li style="padding-left: 0px"><a href="#"><img style="width:100%;height: 534px" src="images/b1.jpg"></a></li>
+        </ul>
+        </div>
+
+    <div class="navigation">
+        <div class="wrap" style="float: left;">
+            <a href="#" style="float: left;display: block;margin-left: 10px"><img src="images/logo.png" ></a>
+        <div class="nav" style="float: right;height: 100%;margin-right: 40px">
+            <ul style="padding-bottom: 10px;padding-right: 10px">
+                <li><a class="on" href="index.html" title="网站首页">网站首页</a></li>
+                <li><a class="on" href="index.html" title="研究院简介">研究院简介</a></li>
+                <li><a class="on" href="index.html" title="研究院简介">研究院动态</a></li>
+                <li><a class="on" href="index.html" title="研究院简介">产品展示</a></li>
+                <li><a class="on" href="index.html" title="研究院简介">电子商务</a></li>
+                <li><a class="on" href="index.html" title="研究院简介">项目众筹</a></li>
+            </ul>
+
+        </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+<div class="content">
+    <div class="con" id="con1" style="height: 96px;text-align: center ">
+            <a href="#" title="研究院动态" style="text-decoration: none;text-align: center;height: 96px; padding-top: 0px;"><img src="images/t1.gif"></a>
+    </div>
+        </div>
+    <div class="con" id="con2" >
+        <div class="con_con2" style="height: 100%;width: 1200px;margin: 0 auto; ">
+        <div class="con2_menu">
+            <div class="ip_ad">
+                <a class="icon" href="#"><img src="images/icon1.gif" style="vertical-align: middle"></a>
+                <a class="tit" href="#">经典案例</a>
+                <a class="text" href="#">樊博2015你你短比被评为结构非独家评选结果。</a>
+                <a class="more" href="#" style="position:absolute; bottom: 1px;right: 0px;"><img src="images/more.gif"></a>
+            </div>
+        </div>
+        <div class="con2_menu">
+            <div class="ip_ad">
+                <a class="icon" href="#"><img src="images/icon2.gif" style="vertical-align: middle"></a>
+                <a class="tit" href="#">新设备新产品</a>
+                <a class="text" href="#">樊博2015你你短比被评为结构非独家评选结果。</a>
+                <a class="more" href="#" style="position:absolute; bottom: 3px;right: 0px;"><img src="images/more.gif"></a>
+            </div>
+
+            </div>
+        <div class="con2_menu">
+            <div class="ip_ad">
+                <a class="icon" href="#"><img src="images/icon3.gif" style="vertical-align: middle"></a>
+                <a class="tit" href="#">研究院动态</a>
+                <a class="text" href="#">樊博2015你你短比被评为结构非独家评选结果。</a>
+                <a class="more" href="#" style="position:absolute; bottom: 3px;right: 0px;"><img src="images/more.gif"></a>
+            </div>
+            </div>
+        <div class="i_news">
+            <ul class="news_ul">
+                <li>
+                    <a href="#">中国轻工业联合会的工业联合会的工业</a>
+                    <p>2015年7月15日通过了中国轻工业联合会的工业联合工业联合会
+                        业联合会的工业联合会的工的工业联合会的工业联合会的鉴定…</p>
+                    <span>2005/09/12</span>
+                </li>
+                <li style="border-bottom: 0px">
+                    <a href="#">中国轻工业联合会的工业联合会的工业</a>
+                    <p>2015年7月15日通过了中国轻工业联合会的工业联合工业联合会
+                        业联合会的工业联合会的工的工业联合会的工业联合会的鉴定…</p>
+                    <span>2005/09/12</span>
+                </li>
+
+            </ul>
+            <a class="more" href="#" style="border: 1px solid #ddd;width: 92px;height: 20px;margin-top:-12px; display:
+            block;color: #666;text-align:center;float: left; margin-left: 2px; padding-top: 1px;">查看更多 +</a>
+
+        </div>
+            </div>
+    </div>
+    <div class="con" id="con_3" style="height: 320px;width: 100%;background-color: #03367b">
+        <div class="til" style="width: 100%;height: 62px;text-align:center; padding-top: 10px;">
+                <a href="#"><img src="images/t2.png"></a>
+        </div>
+        <div class="aboutlist" style="width: 1215px;height: 100% ;margin: 0 auto;">
+            <div class="aboutone" style="width: 390px;height: 250px;float: left;margin-left: 10px"><a href="#"><img src="images/about1.jpg"></a> </div>
+            <div class="aboutone" style="width: 390px;height: 250px;float: left;margin-left: 10px"><a href="#"><img src="images/about2.jpg"></a> </div>
+            <div class="aboutone" style="width: 390px;height: 250px;float: left;margin-left: 10px"><a href="#"><img src="images/about3.jpg"></a> </div>
+        </div>
+    </div>
+    <div class="con" id="con4" style="height: 400px;width: 100%;margin: 0 auto;">
+        <div class="pp" style="width: 1200px;margin: 0 auto;line-height: 2em;font-size: 16px">
+            <p style="padding: 0px;">
+                　　北京泛博化学股份有限公司是将北京泛博科技有限责任公司和沧州泛博精化有限公司的有效资源和业务整合、并吸收战略投资后设立的股份公司，主要从事裘皮、皮革、纺织化学品销售及技术推广，产品包括染料、助剂、功能性材料等共计600多个品种，产品性能处于行业领先水平。
+        </p>
+            <p style="padding: 0px;">
+                　　泛博化学承继了北京泛博科技有限责任公司和沧州泛博精化有限公司多年来积累的销售渠道及客户资源，在全国范围内设有8个分支机构、26个代理商，并在俄罗斯、土耳其、乌克兰、韩国等国家设有代理商，销售网络遍及世界各地。</p>
+            <p style="padding: 0px;">
+                　　泛博化学视产品质量为企业生命，采用高效液相色谱仪、气相色谱仪、质谱仪、红外光度仪、紫外光度仪、电脑测色仪等国 内外尖端检测设备，确保产品性能稳定。</p>
+            <p style="padding: 0px;">
+                　　北京泛博化学股份有限公司拥有一支由众多行业专家组成的高素质技术服务团队，通过为客户提供全方位个性化技术解决方案，竭诚为客户服务，推动行业的技术进步。</p>
+
+        </div>
+        <div style="width: 100%;height: 44px;">
+            <a  class="moreContent" href="#">查看更多</a>
+
+        </div>
+    </div>
+<div class="con" id="con5">
+    <div class="wrap">
+        <div class="quick_menu">
+            <div class="menuone">
+                <a class="pic" href="#"><img src="images/q1.jpg"></a>
+                <div class="blankDiv"></div>
+                <h2 class="menuone_h2"><a href="#">清洁设备</a></h2>
+                <p class="text_pad">
+                    2015年7月15日通过了中国轻工业联合会的工业联合会的工业联合会的工业联合会的工业联合会轻工业联合会的工业联合的鉴定…
+                </p>
+                <a  class="more_tt" style="display: block;position: absolute;right:0px;
+               bottom:0px;" href="#"><img src="images/more.gif"></a>
+
+            </div>
+            <div class="menuone">
+                <a class="pic" href="#">
+                    <img src="images/q2.jpg"></a>
+                <div class="blankDiv"></div>
+                <h2 class="menuone_h2"><a href="#">清洁设备</a></h2>
+                <p class="text_pad">
+                    2015年7月15日通过了中国轻工业联合会的工业联合会的工业联合会的工业联合会的工业联合会轻工业联合会的工业联合的鉴定…
+                </p>
+                <a  class="more_tt" style="display: block;position: absolute;right:0px;
+               bottom:0px;" href="#"><img src="images/more.gif"></a>
+            </div>
+            <div class="menuone">
+                <a class="pic" href="#">
+                    <img src="images/q3.jpg"></a>
+                <div class="blankDiv"></div>
+                <h2 class="menuone_h2"><a href="#">清洁设备</a></h2>
+                <p class="text_pad">
+                    2015年7月15日通过了中国轻工业联合会的工业联合会的工业联合会的工业联合会的工业联合会轻工业联合会的工业联合的鉴定…
+                </p>
+                <a  class="more_tt" style="display: block;position: absolute;right:0px;
+               bottom:0px;" href="#"><img src="images/more.gif"></a>
+
+            </div>
+            <div class="menuone" style="margin:0px">
+                <a class="pic" href="#">
+                <img src="images/q4.jpg"></a>
+                <div class="blankDiv"></div>
+                <h2 class="menuone_h2"><a href="#">清洁设备</a></h2>
+                <p class="text_pad">
+                    2015年7月15日通过了中国轻工业联合会的工业联合会的工业联合会的工业联合会的工业联合会轻工业联合会的工业联合的鉴定…
+                </p>
+                <a  class="more_tt" style="display: block;position: absolute;right:0px;
+               bottom:-2px;" href="#"><img src="images/more.gif"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<div class="footer">
+    <div class="wraper">
+        <div class="f_pad">
+            <div class="f_left">
+                <div class="f_left_fit">客服热线</div>
+                <div class="f_left_he"><span>010-88110849</span>　/  010-88110849  /  010-88114289  / 13520711901  / 13520705112   / E-mail：marketing@fanbobiochemicals.com.cn</div>
+                <div class="f_left_add">公司地址：北京市海淀区阜成路58号新洲商务大厦412室　 工厂地址：北京市大兴区黄村镇霍村工业园泛博路3号</div>
+                <div class="f_left_copy">www.acdfgsgdg.com  版权所有 ©2011-2012 北京泛博生物化学有限公司 京ICP备12036498号</div>
+            </div>
+            <div class="f_code"><a style="margin-top: 10px;position: absolute; top: 10px;left: 2px;"><img src="images/code.png"></a></div>
+        </div>
+
+    </div>
+</div>
+</div>
+</body>
+</html>
